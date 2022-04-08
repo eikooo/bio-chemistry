@@ -1,0 +1,9 @@
+{
+  "name": "bio-chemistry",
+  "version": "0.0.1",
+  "title": "Bio Chemistry",
+  "author": "Eiko",
+  "factorio_version": "1.1",
+  "dependencies": ["base >= 1.1"],
+  "description": "This mod adds reals biochemical processes to the game. Alpha version, not yet playable!"
+}
