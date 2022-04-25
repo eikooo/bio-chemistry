@@ -68,6 +68,8 @@ data:extend(
       icon = icons .. "ATP.png",
       icon_size = 64,
       subgroup = prefix .. "energy",
+      fuel_category = "chemical",
+      fuel_value = "100MJ",
       stack_size = 200
     },
     {

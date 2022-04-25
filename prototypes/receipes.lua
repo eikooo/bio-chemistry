@@ -12,7 +12,11 @@ data:extend(
       },
       main_product = prefix .. "sucrose",
       results = {
-        {type = "item", name = prefix .. "sucrose", amount = 3}
+        {type = "item", name = prefix .. "sucrose", amount = 3},
+        {type = "item", name = prefix .. "adp", amount = 2,probability=0.25},
+        {type = "item", name = prefix .. "pi", amount = 2,probability=0.25},
+        {type = "item", name = prefix .. "nad+", amount = 1,probability=0.25},
+        {type = "item", name = prefix .. "atp", amount = 1,probability=0.05}
       }
     },
     {
@@ -108,7 +112,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "glycolyse",
       energy_required = 5,
-      icon = icons .. "GAP.png",
+      icon = icons .. "Aldolase.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "fructose-1,6-biphosphate", amount = 1}
@@ -124,7 +128,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "glycolyse",
       energy_required = 5,
-      icon = icons .. "GAP.png",
+      icon = icons .. "Triosephosphat-Isomerase.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "dhap", amount = 1}
