@@ -1,4 +1,4 @@
-
+local prefix="ego:bio-"
 local resource = table.deepcopy(data.raw["resource"]["iron-ore"])
 resource.name = "sunflower"
 resource.icon = "__bio-chemistry__/graphics/icons/Icon_Sonnenblumenfeld.png" --What is this for?
@@ -37,7 +37,7 @@ resource.stages =
         variation_count = 1,
       }
 	}
-resource.minable.result = "sunflower"
+resource.minable.result = prefix .. "sunflower"
 
 -- infinity
 -- Map generator setting
@@ -107,12 +107,12 @@ resource.stages =
     {
       {
         type = "item",
-        name = "milk",
+        name = prefix .. "milk",
         amount=1
       },
       {
         type = "item",
-        name = "meat",
+        name = prefix .. "meat",
         amount=1,
         probability = 0.1
       }

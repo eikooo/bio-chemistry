@@ -1,61 +1,52 @@
-
-local recipe = table.deepcopy(data.raw["recipe"]["heavy-armor"])
-recipe.enabled = true
-recipe.name = "stuff"
-recipe.ingredients = {{"iron-ore",10}}
-recipe.result = "sunflower"
-
-
-data:extend({recipe})
-
+local prefix="ego:bio-"
 data:extend({
     {
     type = "recipe",
-    name = "sirup-pressen",
+    name = prefix .. "press-syrup",
     category = "crafting",
     energy_required = 7,
     ingredients =
     {
-        {type="item", name="sugar-cane", amount=1}
+        {type="item", name =  prefix .. "sugar-cane", amount=1}
     },
-    main_product = "sucrose",
+    main_product = prefix .. "sucrose",
     results =
     {
-        {type="item", name="sucrose", amount=3}
+        {type="item", name =  prefix .. "sucrose", amount=3}
     }
   },
   {
-    name = "saccharose-spalten",
+    name = prefix .. "split-sucrose",
     type = "recipe",
     category="crafting",
     energy_required=5,
     ingredients =
     {
-        {type="item", name="sucrose", amount=1}
+        {type="item", name =  prefix .. "sucrose", amount=1}
     },
-    main_product = "glucose",
+    main_product = prefix .. "glucose",
     results =
     {
-        {type="item", name="glucose", amount=1},
-        {type="item", name="fructose", amount=1}
+        {type="item", name =  prefix .. "glucose", amount=1},
+        {type="item", name =  prefix .. "fructose", amount=1}
     }
   },
   {
-    name = "centrifuge-milk",
+    name = prefix .. "centrifuge-milk",
     type = "recipe",
-    category="crafting",
+    category="advanced-crafting",
     energy_required=30,
     ingredients =
     {
-        {type="item", name="milk", amount=10}
+        {type="item", name =  prefix .. "milk", amount=10}
     },
-    main_product = "lactose",
+    main_product = prefix .. "lactose",
     results =
     {
-        {type="item", name="lactose", amount=10},
-        --{type="fluid", name="water", amount=10},
-        {type="item", name="c4-butter", amount=1},
-        {type="item", name="atp", amount=1,probability=0.05},
+        {type="item", name =  prefix .. "lactose", amount=10},
+        {type="fluid", name = "water", amount=10},
+        {type="item", name =  prefix .. "c4-butter", amount=1},
+        {type="item", name =  prefix .. "atp", amount=1,probability=0.05},
     }
   }
 })
