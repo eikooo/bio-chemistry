@@ -7,29 +7,36 @@ local itemGroup = {
   icon = icons .. "bio-chemistry.png",
   icon_size = 64
 }
+
+local resourceSubgroup = {
+    type = "item-subgroup",
+    name = prefix .. "resource",
+    group = prefix .. "bio-chemistry",
+    order = "a"
+  }
 local sugarSubgroup = {
   type = "item-subgroup",
   name = prefix .. "sugar",
   group = prefix .. "bio-chemistry",
-  order = "a"
+    order = "b"
 }
 local fatSubgroup = {
   type = "item-subgroup",
   name = prefix .. "fat",
   group = prefix .. "bio-chemistry",
-  order = "b"
+    order = "c"
 }
 local energySubgroup = {
   type = "item-subgroup",
   name = prefix .. "energy",
   group = prefix .. "bio-chemistry",
-  order = "c"
+    order = "d"
 }
 local proteinSubgroup = {
   type = "item-subgroup",
   name = prefix .. "protein",
   group = prefix .. "bio-chemistry",
-  order = "d"
+    order = "e"
 }
 local glycolyseSubgroup = {
   type = "item-subgroup",
@@ -37,14 +44,14 @@ local glycolyseSubgroup = {
   group = prefix .. "bio-chemistry",
   order = "e"
 }
-data:extend({itemGroup, sugarSubgroup, fatSubgroup, energySubgroup, proteinSubgroup, glycolyseSubgroup})
+data:extend({itemGroup, resourceSubgroup, sugarSubgroup, fatSubgroup, energySubgroup, proteinSubgroup, glycolyseSubgroup})
 
 data:extend(
   {
     {
       type = "item",
       name = prefix .. "sunflower",
-      icon = icons .. "Icon_Sonnenblumenfeld.png",
+      icon = icons .. "Sonnenblume.png",
       icon_size = 64,
       subgroup = prefix .. "fat",
       stack_size = 200
