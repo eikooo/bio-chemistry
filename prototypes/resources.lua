@@ -149,81 +149,118 @@ data:extend(
 -- cows
 --------------------------------
 
-local resource = table.deepcopy(data.raw["resource"]["iron-ore"])
-resource.name = "cows"
-resource.icon = "__bio-chemistry__/graphics/icons/Sonnenblumenfeld.png" --What is this for?
-resource.icon_size = 64
-resource.autoplace =
+local resource = {
+  type = "resource",
+  name = prefix .. "cows",
+  icon = "__bio-chemistry__/graphics/icons/Kuhe.png",
+  icon_size = 64,
+
+  collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
+  selection_box = {{ -0.5, -0.5}, {0.5, 0.5}}, -- full tile
+  flags = {"placeable-neutral"},
+  --map_generator_bounding_box = {{ -0.49, -0.49}, {0.49, 0.49}},
+  map_grid = false,
+  minable = 
   {
-  control = "cows",
-  order = order,
-  sharpness = 15/16,
+    mining_time = 2,
+    mining_particle = "blood-particle", 
+    results =
+    {
+      {
+        type = "item",
+        name = prefix .. "milk",
+        amount = 1
+      },
+      {
+        type = "item",
+        name = prefix .. "meat",
+        amount = 1,
+        probability = 0.1
+      }
+    }
+  },
+
+  subgroup = prefix .. "resource",
+  remove_decoratives = true,
+  mining_sound = 
+  {
+    {
+      filename = "__base__/sound/particles/small-splash-4.ogg"
+    },
+    {
+      filename = "__base__/sound/particles/small-splash-5.ogg"
+    }
+  },
+  
+  autoplace =
+  {
+    control = prefix .. "cows",
+    order = "d",
+    --sharpness = 0.2,
+    sharpness = 15/16,
     richness_multiplier = 1500,
     richness_multiplier_distance_bonus = 20,
     richness_base = 10,
-  coverage = 0.006 / 3,
+    coverage = 0.004 / 3,
     peaks =
     {
       {
-  	noise_layer = "copper-ore",
+        noise_layer = prefix .. "cows",
         noise_octaves_difference = -0.85,
         noise_persistence = 0.4
       }
     },
     starting_area_size = 5500 * 0.006 / 3,
     starting_area_amount = 1600
-}
-resource.map_color = {1, 1, 0}
-resource.stage_counts = {1300, 400, 150, 80}
-resource.stages =
+  },
+
+  map_color = {0.96, 0.96, 0.92},
+  stage_counts = {1300, 400, 150, 80},
+  stages =
   {
     sheet =
     {
-        filename = "__bio-chemistry__/graphics/entity/kuhe.png",
+      filename = "__bio-chemistry__/graphics/entity/Kuhe.png",
       priority = "extra-high",
       width = 64,
       height = 64,
       frame_count = 8,
-        variation_count = 4
-      }
-	}
-  resource.minable =
-  {
-    mining_time = 1,
-    results =
-    {
+      variation_count = 4,
+      hr_version =
       {
-        type = "item",
-        name = prefix .. "milk",
-        amount=1
-      },
-      {
-        type = "item",
-        name = prefix .. "meat",
-        amount=1,
-        probability = 0.1
+        filename = "__bio-chemistry__/graphics/entity/hr-Kuhe.png",
+        priority = "extra-high",
+        width = 128,
+        height = 128,
+        frame_count = 8,
+        variation_count = 4,
+        scale = 0.5
       }
     }
   },
 
--- infinity
--- Map generator setting
--- Mining sound
--- Walking sound
--- Control Icon
--- Mining Particle
--- Bäume, Gras, etc.
-
+  tree_removal_probability = 0.7,
+  tree_removal_max_distance = 32 * 32
+}
 data:extend{resource}
 
 data:extend(
 {
   {
+    type = "noise-layer",
+    name = prefix .. "cows"
+  }
+})
+
+data:extend(
+{
+  {
     type = "autoplace-control",
-    name = "cows",
+    name = prefix .. "cows",
     richness = true,
 	  can_be_disabled = true,
-    order = "z-b",
-    category = "resource"
+    order = "z-a",
+    category = "resource",
+	  localised_name = {"", "[entity=" .. prefix .. "cows] ", {"entity-name." .. prefix .. "cows"}}
   }
 })
