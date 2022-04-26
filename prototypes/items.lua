@@ -71,9 +71,75 @@ data:extend(
     },
     {
       type = "item-subgroup",
+      name = prefix .. "amino-acid",
+      group = prefix .. "bio-chemistry",
+      order = "i"
+    },
+    {
+      type = "item-subgroup",
+      name = prefix .. "urea-cycle",
+      group = prefix .. "bio-chemistry",
+      order = "j"
+    },
+    {
+      type = "item-subgroup",
+      name = prefix .. "citrate-cycle",
+      group = prefix .. "bio-chemistry",
+      order = "k"
+    },
+    {
+      type = "item-subgroup",
+      name = prefix .. "respiration",
+      group = prefix .. "bio-chemistry",
+      order = "l"
+    },
+    {
+      type = "item-subgroup",
+      name = prefix .. "leftovers",
+      group = prefix .. "bio-chemistry",
+      order = "y"
+    },
+    {
+      type = "item-subgroup",
       name = prefix .. "waste",
       group = prefix .. "bio-chemistry",
       order = "z"
+    }
+  }
+)
+data:extend(
+  {
+    {
+      type = "item",
+      name = prefix .. "nh4+",
+      icon = icons .. "NH4.png",
+      icon_size = 64,
+      subgroup = prefix .. "leftovers",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "co2",
+      icon = icons .. "CO2.png",
+      icon_size = 64,
+      subgroup = prefix .. "leftovers",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "o2",
+      icon = icons .. "O2.png",
+      icon_size = 64,
+      subgroup = prefix .. "leftovers",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "hco3-",
+      icon = icons .. "HCO3.png",
+      icon_size = 64,
+      subgroup = prefix .. "leftovers",
+      stack_size = 200
     }
   }
 )
@@ -455,7 +521,42 @@ data:extend(
     }
   }
 )
-
+data:extend(
+  {
+    {
+      type = "item",
+      name = prefix .. "hydroxyethyl-tpp",
+      icon = icons .. "Hydroxyethyl-TPP.png",
+      icon_size = 64,
+      subgroup = prefix .. "pyruvate-reduction",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "liponamid",
+      icon = icons .. "Liponamid.png",
+      icon_size = 64,
+      subgroup = prefix .. "pyruvate-reduction",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "acetylliponamid",
+      icon = icons .. "Acetylliponamid.png",
+      icon_size = 64,
+      subgroup = prefix .. "pyruvate-reduction",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "dihydroliponamid",
+      icon = icons .. "Dihydroliponamid.png",
+      icon_size = 64,
+      subgroup = prefix .. "pyruvate-reduction",
+      stack_size = 200
+    }
+  }
+)
 data:extend(
   {
     {
@@ -504,39 +605,279 @@ data:extend(
     }
   }
 )
-for i=18,4,-2 do
+for i = 18, 4, -2 do
   data:extend(
+    {
+      {
+        type = "item",
+        name = prefix .. "acyl-coa-c" .. i,
+        icon = icons .. "C" .. i .. "-CoA.png",
+        icon_size = 64,
+        subgroup = prefix .. "beta-oxidation",
+        stack_size = 200
+      },
+      {
+        type = "item",
+        name = prefix .. "enoyl-coa-c" .. i,
+        icon = icons .. "C" .. i .. "-Enoyl.png",
+        icon_size = 64,
+        subgroup = prefix .. "beta-oxidation",
+        stack_size = 200
+      },
+      {
+        type = "item",
+        name = prefix .. "l-3-hydroxyacyl-coa-c" .. i,
+        icon = icons .. "C" .. i .. "-Hydroxyacyl-CoA.png",
+        icon_size = 64,
+        subgroup = prefix .. "beta-oxidation",
+        stack_size = 200
+      },
+      {
+        type = "item",
+        name = prefix .. "3-ketoacyl-coa-c" .. i,
+        icon = icons .. "C" .. i .. "-Ketoacyl-CoA.png",
+        icon_size = 64,
+        subgroup = prefix .. "beta-oxidation",
+        stack_size = 200
+      }
+    }
+  )
+end
+data:extend(
   {
     {
       type = "item",
-      name = prefix .. "acyl-coa-c"..i,
-      icon = icons .. "C"..i.."-CoA.png",
+      name = prefix .. "glutamate",
+      icon = icons .. "Glutamat.png",
       icon_size = 64,
-      subgroup = prefix .. "beta-oxidation",
+      subgroup = prefix .. "amino-acid",
       stack_size = 200
     },
     {
       type = "item",
-      name = prefix .. "enoyl-coa-c"..i,
-      icon = icons .. "C"..i.."-Enoyl.png",
+      name = prefix .. "glutamine",
+      icon = icons .. "Glutamin.png",
       icon_size = 64,
-      subgroup = prefix .. "beta-oxidation",
+      subgroup = prefix .. "amino-acid",
       stack_size = 200
     },
     {
       type = "item",
-      name = prefix .. "l-3-hydroxyacyl-coa-c"..i,
-      icon = icons .. "C"..i.."-Hydroxyacyl-CoA.png",
+      name = prefix .. "aspartate",
+      icon = icons .. "Aspartat.png",
       icon_size = 64,
-      subgroup = prefix .. "beta-oxidation",
+      subgroup = prefix .. "amino-acid",
       stack_size = 200
     },
     {
       type = "item",
-      name = prefix .. "3-ketoacyl-coa-c"..i,
-      icon = icons .. "C"..i.."-Ketoacyl-CoA.png",
+      name = prefix .. "alanine",
+      icon = icons .. "Alanin.png",
       icon_size = 64,
-      subgroup = prefix .. "beta-oxidation",
+      subgroup = prefix .. "amino-acid",
       stack_size = 200
-    }})
-end
+    },
+    {
+      type = "item",
+      name = prefix .. "arginine",
+      icon = icons .. "Arginin.png",
+      icon_size = 64,
+      subgroup = prefix .. "amino-acid",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "imino-acid-glutamine",
+      icon = icons .. "Imino-Zwischenprodukt.png",
+      icon_size = 64,
+      subgroup = prefix .. "amino-acid",
+      stack_size = 200
+    }
+  }
+)
+
+data:extend(
+  {
+    {
+      type = "item",
+      name = prefix .. "glutamine",
+      icon = icons .. "Glutamin.png",
+      icon_size = 64,
+      subgroup = prefix .. "urea-cycle",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "aspartate",
+      icon = icons .. "Aspartat.png",
+      icon_size = 64,
+      subgroup = prefix .. "urea-cycle",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "alanine",
+      icon = icons .. "Alanin.png",
+      icon_size = 64,
+      subgroup = prefix .. "urea-cycle",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "arginine",
+      icon = icons .. "Arginin.png",
+      icon_size = 64,
+      subgroup = prefix .. "urea-cycle",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "imino-acid-glutamine",
+      icon = icons .. "Imino-Zwischenprodukt.png",
+      icon_size = 64,
+      subgroup = prefix .. "urea-cycle",
+      stack_size = 200
+    }
+  }
+)
+data:extend(
+  {
+    {
+      type = "item",
+      name = prefix .. "carbamoyl-phosphate",
+      icon = icons .. "Carbamylphosphat.png",
+      icon_size = 64,
+      subgroup = prefix .. "urea-cycle",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "ornithine",
+      icon = icons .. "Ornithin.png",
+      icon_size = 64,
+      subgroup = prefix .. "urea-cycle",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "citrulline",
+      icon = icons .. "Citrullin.png",
+      icon_size = 64,
+      subgroup = prefix .. "urea-cycle",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "argininosuccinic-acid",
+      icon = icons .. "Argininosuccinat.png",
+      icon_size = 64,
+      subgroup = prefix .. "urea-cycle",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "urea",
+      icon = icons .. "Harnstoff.png",
+      icon_size = 64,
+      subgroup = prefix .. "urea-cycle",
+      stack_size = 200
+    }
+  }
+)
+data:extend(
+  {
+    {
+      type = "item",
+      name = prefix .. "alpha-ketoglutarate",
+      icon = icons .. "Alpha-Ketogluterat.png",
+      icon_size = 64,
+      subgroup = prefix .. "citrate-cycle",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "oxaloacetate",
+      icon = icons .. "Oxalacetat.png",
+      icon_size = 64,
+      subgroup = prefix .. "citrate-cycle",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "citryl-coa",
+      icon = icons .. "Citryl-CoA.png",
+      icon_size = 64,
+      subgroup = prefix .. "citrate-cycle",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "citrate",
+      icon = icons .. "Citrat.png",
+      icon_size = 64,
+      subgroup = prefix .. "citrate-cycle",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "isocitrate",
+      icon = icons .. "Isocitrat.png",
+      icon_size = 64,
+      subgroup = prefix .. "citrate-cycle",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "oxalosuccinate",
+      icon = icons .. "Oxalsuccinat.png",
+      icon_size = 64,
+      subgroup = prefix .. "citrate-cycle",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "succinyl-coa",
+      icon = icons .. "Succinyl-CoA.png",
+      icon_size = 64,
+      subgroup = prefix .. "citrate-cycle",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "succinate",
+      icon = icons .. "Succinat.png",
+      icon_size = 64,
+      subgroup = prefix .. "citrate-cycle",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "fumarate",
+      icon = icons .. "Fumarat.png",
+      icon_size = 64,
+      subgroup = prefix .. "citrate-cycle",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "malate",
+      icon = icons .. "Malat.png",
+      icon_size = 64,
+      subgroup = prefix .. "citrate-cycle",
+      stack_size = 200
+    }
+  }
+)
+
+data:extend(
+  {
+    {
+      type = "item",
+      name = prefix .. "fadh2-succinate-dehydrogenase+2e-",
+      icon = icons .. "NH4.png",
+      icon_size = 64,
+      subgroup = prefix .. "respiration",
+      stack_size = 200
+    }
+  }
+)

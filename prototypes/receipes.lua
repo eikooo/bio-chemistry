@@ -96,6 +96,62 @@ data:extend(
         {type = "item", name = prefix .. "pi", amount = 2, probability = 0.25},
         {type = "item", name = prefix .. "nadp", amount = 1, probability = 0.05}
       }
+    },
+    {
+      name = prefix .. "proteolysis-meat",
+      type = "recipe",
+      category = "crafting",
+      energy_required = 15,
+      subgroup = prefix .. "amino-acid",
+      icon = icons .. "Glutamat.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "meat-protein", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "glutamate", amount = 3},
+        {type = "item", name = prefix .. "aspartate", amount = 1},
+        {type = "item", name = prefix .. "alanine", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "proteolysis-milk",
+      type = "recipe",
+      category = "crafting",
+      energy_required = 15,
+      subgroup = prefix .. "amino-acid",
+      icon = icons .. "Arginin.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "milk-protein", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "arginine", amount = 1},
+        {type = "item", name = prefix .. "glutamate", amount = 1},
+        {type = "item", name = prefix .. "liponamid", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "digest-waste",
+      type = "recipe",
+      category = "advanced-crafting",
+      energy_required = 15,
+      subgroup = prefix .. "waste",
+      icon = icons .. "Dreckwasser.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "waste", amount = 1},
+        {type = "fluid", name = "water", amount = 3}
+      },
+      main_product = "",
+      results = {
+        {type = "fluid", name = prefix .. "waste-water", amount = 1},
+        {type = "item", name = prefix .. "hco3-", amount = 3},
+        {type = "item", name = prefix .. "nadp", amount = 1, probability = 0.05},
+        {type = "item", name = prefix .. "nad+", amount = 1, probability = 0.05}
+      }
     }
   }
 )
@@ -336,6 +392,100 @@ data:extend(
 data:extend(
   {
     {
+      name = prefix .. "pyruvatdehydrogenase-complex-e1-step1",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "pyruvate-reduction",
+      energy_required = 5,
+      icon = icons .. "Hydroxyethyl-TPP.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "pyruvate", amount = 1},
+        {type = "item", name = prefix .. "h+", amount = 2}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "hydroxyethyl-tpp", amount = 1},
+        {type = "item", name = prefix .. "co2", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "pyruvatdehydrogenase-complex-e1-step2",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "pyruvate-reduction",
+      energy_required = 5,
+      icon = icons .. "Acetylliponamid.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "hydroxyethyl-tpp", amount = 1},
+        {type = "item", name = prefix .. "liponamid", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "acetylliponamid", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "dihydrolipoyl-transacetylase-e2",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "pyruvate-reduction",
+      energy_required = 5,
+      icon = icons .. "Acetyl-CoA.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "acetylliponamid", amount = 1},
+        {type = "item", name = prefix .. "coa", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "acetyl-coa", amount = 1},
+        {type = "item", name = prefix .. "dihydroliponamid", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "dihydrolipoyl-dehydrogenase-e3-step1",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "pyruvate-reduction",
+      energy_required = 5,
+      icon = icons .. "Liponamid.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "dihydroliponamid", amount = 1},
+        {type = "item", name = prefix .. "fad", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "liponamid", amount = 1},
+        {type = "item", name = prefix .. "fadh2", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "dihydrolipoyl-dehydrogenase-e3-step2",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "pyruvate-reduction",
+      energy_required = 5,
+      icon = icons .. "FAD.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "fadh2", amount = 1},
+        {type = "item", name = prefix .. "nad+", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "fad", amount = 1},
+        {type = "item", name = prefix .. "nadh", amount = 1},
+        {type = "item", name = prefix .. "h+", amount = 1}
+      }
+    }
+  }
+)
+data:extend(
+  {
+    {
       name = prefix .. "lipase",
       type = "recipe",
       category = "advanced-crafting",
@@ -491,43 +641,332 @@ for i = 18, 4, -2 do
   )
 end
 for i = 18, 6, -2 do
-  data:extend({
+  data:extend(
     {
-      name = prefix .. "acetyl-coa-c-acetyltransferase-c" .. i,
+      {
+        name = prefix .. "acetyl-coa-c-acetyltransferase-c" .. i,
+        type = "recipe",
+        category = "crafting",
+        subgroup = prefix .. "lipolysis",
+        energy_required = 5,
+        icon = icons .. "C" .. (i - 2) .. "-CoA.png",
+        icon_size = 64,
+        ingredients = {
+          {type = "item", name = prefix .. "3-ketoacyl-coa-c" .. i, amount = 1},
+          {type = "item", name = prefix .. "coa", amount = 1}
+        },
+        main_product = "",
+        results = {
+          {type = "item", name = prefix .. "acyl-coa-c" .. (i - 2), amount = 1},
+          {type = "item", name = prefix .. "acetyl-coa", amount = 1}
+        }
+      }
+    }
+  )
+end
+data:extend(
+  {
+    {
+      name = prefix .. "acetyl-coa-c-acetyltransferase-c4",
       type = "recipe",
       category = "crafting",
       subgroup = prefix .. "lipolysis",
       energy_required = 5,
-      icon = icons .. "C" .. (i - 2) .. "-CoA.png",
+      icon = icons .. "Acetyl-CoA.png",
       icon_size = 64,
       ingredients = {
-        {type = "item", name = prefix .. "3-ketoacyl-coa-c" .. i, amount = 1},
+        {type = "item", name = prefix .. "3-ketoacyl-coa-c4", amount = 1},
         {type = "item", name = prefix .. "coa", amount = 1}
       },
       main_product = "",
       results = {
-        {type = "item", name = prefix .. "acyl-coa-c" .. (i - 2), amount = 1},
-        {type = "item", name = prefix .. "acetyl-coa", amount = 1}
+        {type = "item", name = prefix .. "acetyl-coa", amount = 2}
       }
-    }}
-  )
-end
-data:extend({
-  {
-    name = prefix .. "acetyl-coa-c-acetyltransferase-c4",
-    type = "recipe",
-    category = "crafting",
-    subgroup = prefix .. "lipolysis",
-    energy_required = 5,
-    icon = icons .. "Acetyl-CoA.png",
-    icon_size = 64,
-    ingredients = {
-      {type = "item", name = prefix .. "3-ketoacyl-coa-c4", amount = 1},
-      {type = "item", name = prefix .. "coa", amount = 1}
-    },
-    main_product = "",
-    results = {
-      {type = "item", name = prefix .. "acetyl-coa", amount = 2}
     }
-  }}
+  }
+)
+data:extend(
+  {
+    {
+      name = prefix .. "glutamate-dehydrogenase-step1",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "amino-acid",
+      energy_required = 5,
+      icon = icons .. "Imino-Zwischenprodukt.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "glutamate", amount = 1},
+        {type = "item", name = prefix .. "nadp", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "imino-acid-glutamine", amount = 1},
+        {type = "item", name = prefix .. "nadph", amount = 1},
+        {type = "item", name = prefix .. "h+", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "glutamate-dehydrogenase-step2",
+      type = "recipe",
+      category = "advanced-crafting",
+      subgroup = prefix .. "amino-acid",
+      energy_required = 5,
+      icon = icons .. "Alpha-Ketogluterat.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "imino-acid-glutamine", amount = 1},
+        {type = "fluid", name = "water", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "alpha-ketoglutarate", amount = 1},
+        {type = "item", name = prefix .. "nh4+", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "glutamine-synthetase",
+      type = "recipe",
+      category = "advanced-crafting",
+      subgroup = prefix .. "amino-acid",
+      energy_required = 5,
+      icon = icons .. "Glutamin.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "glutamate", amount = 1},
+        {type = "item", name = prefix .. "nh4+", amount = 1},
+        {type = "item", name = prefix .. "atp", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "glutamine", amount = 1},
+        {type = "item", name = prefix .. "adp", amount = 1},
+        {type = "item", name = prefix .. "pi", amount = 1},
+        {type = "fluid", name = "water", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "aspartate-transaminase",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "amino-acid",
+      energy_required = 5,
+      icon = icons .. "Oxalacetat.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "aspartate", amount = 1},
+        {type = "item", name = prefix .. "alpha-ketoglutarate", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "oxaloacetate", amount = 1},
+        {type = "item", name = prefix .. "glutamate", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "alanine-transaminase",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "amino-acid",
+      energy_required = 5,
+      icon = icons .. "Pyruvat.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "alanine", amount = 1},
+        {type = "item", name = prefix .. "alpha-ketoglutarate", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "pyruvate", amount = 1},
+        {type = "item", name = prefix .. "glutamate", amount = 1}
+      }
+    }
+  }
+)
+
+data:extend(
+  {
+    {
+      name = prefix .. "citrate-synthase-step1",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "citrate-cycle",
+      energy_required = 5,
+      icon = icons .. "Citryl-CoA.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "oxaloacetate", amount = 1},
+        {type = "item", name = prefix .. "acetyl-coa", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "citryl-coa", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "citrate-synthase-step2",
+      type = "recipe",
+      category = "advanced-crafting",
+      subgroup = prefix .. "citrate-cycle",
+      energy_required = 5,
+      icon = icons .. "Citrat.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "citryl-coa", amount = 1},
+        {type = "fluid", name = "water", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "citrate", amount = 1},
+        {type = "item", name = prefix .. "coa", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "aconitase",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "citrate-cycle",
+      energy_required = 5,
+      icon = icons .. "isocitrat.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "citrate", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "isocitrate", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "isocitrate-dehydrogenase-step1",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "citrate-cycle",
+      energy_required = 5,
+      icon = icons .. "Oxalsuccinat.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "isocitrate", amount = 1},
+        {type = "item", name = prefix .. "nad+", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "oxalosuccinate", amount = 1},
+        {type = "item", name = prefix .. "nadh", amount = 1},
+        {type = "item", name = prefix .. "h+", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "isocitrate-dehydrogenase-step2",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "citrate-cycle",
+      energy_required = 5,
+      icon = icons .. "Alpha-Ketogluterat.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "oxalosuccinate", amount = 1},
+        {type = "item", name = prefix .. "h+", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "alpha-ketoglutarate", amount = 1},
+        {type = "item", name = prefix .. "co2", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "oxoglutarate-dehydrogenase-complex",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "citrate-cycle",
+      energy_required = 5,
+      icon = icons .. "Succinyl-CoA.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "alpha-ketoglutarate", amount = 1},
+        {type = "item", name = prefix .. "nad+", amount = 1},
+        {type = "item", name = prefix .. "coa", amount = 1},
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "succinyl-coa", amount = 1},
+        {type = "item", name = prefix .. "co2", amount = 1},
+        {type = "item", name = prefix .. "nadh", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "succinyl-coenzyme-a-synthetase",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "citrate-cycle",
+      energy_required = 5,
+      icon = icons .. "Succinat.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "succinyl-coa", amount = 1},
+        {type = "item", name = prefix .. "adp", amount = 1},
+        {type = "item", name = prefix .. "pi", amount = 1},
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "succinate", amount = 1},
+        {type = "item", name = prefix .. "coa", amount = 1},
+        {type = "item", name = prefix .. "atp", amount = 1},
+      }
+    },
+    {
+      name = prefix .. "succinate-dehydrogenase",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "citrate-cycle",
+      energy_required = 5,
+      icon = icons .. "Fumarat.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "succinate", amount = 1},
+        {type = "item", name = prefix .. "fad", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "fumarate", amount = 1},
+        {type = "item", name = prefix .. "fadh2", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "fumarase",
+      type = "recipe",
+      category = "advanced-crafting",
+      subgroup = prefix .. "citrate-cycle",
+      energy_required = 5,
+      icon = icons .. "Malat.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "fumarate", amount = 1},
+        {type = "fluid", name = "water", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "malate", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "malate-dehydrogenase",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "citrate-cycle",
+      energy_required = 5,
+      icon = icons .. "Oxalacetat.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "malate", amount = 1},
+        {type = "item", name = prefix .. "nad+", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "oxaloacetate", amount = 1},
+        {type = "item", name = prefix .. "nadh", amount = 1},
+        {type = "item", name = prefix .. "h+", amount = 1},
+      }
+    }
+  }
 )
