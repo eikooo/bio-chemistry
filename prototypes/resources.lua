@@ -1,5 +1,43 @@
 local prefix="ego:bio-"
 
+local plantWalkingSound = 
+{
+  {
+    filename = "__base__/sound/walking/plant/bush-big-01.ogg",
+  },
+  {
+    filename = "__base__/sound/walking/plant/bush-big-02.ogg",
+  },
+  {
+    filename = "__base__/sound/walking/plant/bush-big-03.ogg",
+  },
+  {
+    filename = "__base__/sound/walking/plant/bush-big-04.ogg",
+  },
+  {
+    filename = "__base__/sound/walking/plant/bush-big-05.ogg",
+  },
+  {
+    filename = "__base__/sound/walking/plant/bush-big-06.ogg",
+  },
+  {
+    filename = "__base__/sound/walking/plant/bush-big-07.ogg",
+  }
+}
+
+local plantMinigSound = 
+{
+  {
+    filename = "__base__/sound/particles/tree-leaves-1.ogg",
+  },
+  {
+    filename = "__base__/sound/particles/tree-leaves-3.ogg",
+  },
+  {
+    filename = "__base__/sound/particles/tree-leaves-4.ogg",
+  }
+}
+
 --------------------------------
 -- Sunflower
 --------------------------------
@@ -30,7 +68,7 @@ local resource = {
 
   subgroup = prefix .. "resource",
   remove_decoratives = true,
-  mining_sound = {filename = "__base__/sound/particles/tree-leaves-1.ogg"},
+  mining_sound = plantMinigSound,
 
 
   autoplace =
@@ -78,10 +116,11 @@ local resource = {
       }
     }
   },
-
-  walking_sound = {filename = "__base__/sound/walking/plant/bush-big-01.ogg"},
+  
+  walking_sound = plantWalkingSound,
+  
   tree_removal_probability = 1,
-  tree_removal_max_distance = 32 * 320
+  tree_removal_max_distance = 32 * 320,
 }
 data:extend{resource}
 
@@ -115,36 +154,36 @@ resource.name = "cows"
 resource.icon = "__bio-chemistry__/graphics/icons/Sonnenblumenfeld.png" --What is this for?
 resource.icon_size = 64
 resource.autoplace =
-{
+  {
   control = "cows",
   order = order,
   sharpness = 15/16,
-  richness_multiplier = 1500,
-  richness_multiplier_distance_bonus = 20,
-  richness_base = 10,
+    richness_multiplier = 1500,
+    richness_multiplier_distance_bonus = 20,
+    richness_base = 10,
   coverage = 0.006 / 3,
-  peaks =
-  {
+    peaks =
     {
+      {
   	noise_layer = "copper-ore",
-  	noise_octaves_difference = -0.85,
-  	noise_persistence = 0.4
-    }
-  },
-  starting_area_size = 5500 * 0.006 / 3,
-  starting_area_amount = 1600
+        noise_octaves_difference = -0.85,
+        noise_persistence = 0.4
+      }
+    },
+    starting_area_size = 5500 * 0.006 / 3,
+    starting_area_amount = 1600
 }
 resource.map_color = {1, 1, 0}
 resource.stage_counts = {1300, 400, 150, 80}
 resource.stages =
+  {
+    sheet =
     {
-      sheet =
-      {
         filename = "__bio-chemistry__/graphics/entity/kuhe.png",
-        priority = "extra-high",
-        width = 64,
-        height = 64,
-        frame_count = 8,
+      priority = "extra-high",
+      width = 64,
+      height = 64,
+      frame_count = 8,
         variation_count = 4
       }
 	}
