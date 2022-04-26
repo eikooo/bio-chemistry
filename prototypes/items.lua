@@ -1,62 +1,82 @@
 local prefix = "ego:bio-"
 local icons = "__bio-chemistry__/graphics/icons/"
-local itemGroup = {
-  type = "item-group",
-  name = prefix .. "bio-chemistry",
-  order = "z",
-  icon = icons .. "bio-chemistry.png",
-  icon_size = 64
-}
-
-local resourceSubgroup = {
-    type = "item-subgroup",
-    name = prefix .. "resource",
-    group = prefix .. "bio-chemistry",
-    order = "a"
+data:extend(
+  {
+    {
+      type = "item-group",
+      name = prefix .. "bio-chemistry",
+      order = "z",
+      icon = icons .. "bio-chemistry.png",
+      icon_size = 64
+    },
+    {
+      type = "item-subgroup",
+      name = prefix .. "resource",
+      group = prefix .. "bio-chemistry",
+      order = "a"
+    },
+    {
+      type = "item-subgroup",
+      name = prefix .. "sugar",
+      group = prefix .. "bio-chemistry",
+      order = "b"
+    },
+    {
+      type = "item-subgroup",
+      name = prefix .. "fat",
+      group = prefix .. "bio-chemistry",
+      order = "c"
+    },
+    {
+      type = "item-subgroup",
+      name = prefix .. "energy",
+      group = prefix .. "bio-chemistry",
+      order = "d"
+    },
+    {
+      type = "item-subgroup",
+      name = prefix .. "protein",
+      group = prefix .. "bio-chemistry",
+      order = "e"
+    },
+    {
+      type = "item-subgroup",
+      name = prefix .. "glycolyse",
+      group = prefix .. "bio-chemistry",
+      order = "e"
+    },
+    {
+      type = "item-subgroup",
+      name = prefix .. "kh-reduction",
+      group = prefix .. "bio-chemistry",
+      order = "e-a"
+    },
+    {
+      type = "item-subgroup",
+      name = prefix .. "pyruvate-reduction",
+      group = prefix .. "bio-chemistry",
+      order = "f"
+    },
+    {
+      type = "item-subgroup",
+      name = prefix .. "lipolysis",
+      group = prefix .. "bio-chemistry",
+      order = "g"
+    },
+    {
+      type = "item-subgroup",
+      name = prefix .. "beta-oxidation",
+      group = prefix .. "bio-chemistry",
+      order = "h"
+    },
+    {
+      type = "item-subgroup",
+      name = prefix .. "waste",
+      group = prefix .. "bio-chemistry",
+      order = "z"
+    }
   }
-local sugarSubgroup = {
-  type = "item-subgroup",
-  name = prefix .. "sugar",
-  group = prefix .. "bio-chemistry",
-    order = "b"
-}
-local fatSubgroup = {
-  type = "item-subgroup",
-  name = prefix .. "fat",
-  group = prefix .. "bio-chemistry",
-    order = "c"
-}
-local energySubgroup = {
-  type = "item-subgroup",
-  name = prefix .. "energy",
-  group = prefix .. "bio-chemistry",
-    order = "d"
-}
-local proteinSubgroup = {
-  type = "item-subgroup",
-  name = prefix .. "protein",
-  group = prefix .. "bio-chemistry",
-    order = "e"
-}
-local glycolyseSubgroup = {
-  type = "item-subgroup",
-  name = prefix .. "glycolyse",
-  group = prefix .. "bio-chemistry",
-  order = "e"
-}
-local khreductionSubgroup = {
-  type = "item-subgroup",
-  name = prefix .. "kh-reduction",
-  group = prefix .. "bio-chemistry",
-  order = "e"
-}
-local wasteSubgroup = {
-  type = "item-subgroup",
-  name = prefix .. "waste",
-  group = prefix .. "bio-chemistry",
-  order = "z"
-}
-data:extend({itemGroup, resourceSubgroup, sugarSubgroup, fatSubgroup, energySubgroup, proteinSubgroup, glycolyseSubgroup,khreductionSubgroup,wasteSubgroup})
+)
 data:extend(
   {
     {
@@ -76,8 +96,8 @@ data:extend(
       default_temperature = 15,
       max_temperature = 100,
       heat_capacity = "0.2KJ",
-      base_color = {r=0.5, g=0.41, b=0.13},
-      flow_color = {r=0.7, g=0.57, b=0.19},
+      base_color = {r = 0.5, g = 0.41, b = 0.13},
+      flow_color = {r = 0.7, g = 0.57, b = 0.19}
     },
     {
       type = "fluid",
@@ -88,9 +108,9 @@ data:extend(
       default_temperature = 15,
       max_temperature = 100,
       heat_capacity = "0.2KJ",
-      base_color = {r=1, g=0.87, b=0},
-      flow_color = {r=1, g=0.91, b=0.35},
-    }     
+      base_color = {r = 1, g = 0.87, b = 0},
+      flow_color = {r = 1, g = 0.91, b = 0.35}
+    }
   }
 )
 data:extend(
@@ -107,6 +127,30 @@ data:extend(
       type = "item",
       name = prefix .. "c4-butter",
       icon = icons .. "Butter.png",
+      icon_size = 64,
+      subgroup = prefix .. "fat",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "cholesterol",
+      icon = icons .. "Cholesterin.png",
+      icon_size = 64,
+      subgroup = prefix .. "fat",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "sunflower-seeds",
+      icon = icons .. "Sonnenblumenkerne.png",
+      icon_size = 64,
+      subgroup = prefix .. "fat",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "sunflower-oil-c18",
+      icon = icons .. "Sonnenblumenoel.png",
       icon_size = 64,
       subgroup = prefix .. "fat",
       stack_size = 200
@@ -411,3 +455,88 @@ data:extend(
     }
   }
 )
+
+data:extend(
+  {
+    {
+      type = "item",
+      name = prefix .. "glycerol",
+      icon = icons .. "Glycerin.png",
+      icon_size = 64,
+      subgroup = prefix .. "lipolysis",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "fatty-acid-c18",
+      icon = icons .. "C18-FS.png",
+      icon_size = 64,
+      subgroup = prefix .. "lipolysis",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "l-glycerol-3-phosphate",
+      icon = icons .. "Glycerin-3-Phosphat.png",
+      icon_size = 64,
+      subgroup = prefix .. "lipolysis",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "acyl-amp-c18",
+      icon = icons .. "C18-Acyl-AMP.png",
+      icon_size = 64,
+      subgroup = prefix .. "lipolysis",
+      stack_size = 200
+    }
+  }
+)
+data:extend(
+  {
+    {
+      type = "item",
+      name = prefix .. "acetyl-coa",
+      icon = icons .. "Acetyl-CoA.png",
+      icon_size = 64,
+      subgroup = prefix .. "beta-oxidation",
+      stack_size = 200
+    }
+  }
+)
+for i=18,4,-2 do
+  data:extend(
+  {
+    {
+      type = "item",
+      name = prefix .. "acyl-coa-c"..i,
+      icon = icons .. "C"..i.."-CoA.png",
+      icon_size = 64,
+      subgroup = prefix .. "beta-oxidation",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "enoyl-coa-c"..i,
+      icon = icons .. "C"..i.."-Enoyl.png",
+      icon_size = 64,
+      subgroup = prefix .. "beta-oxidation",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "l-3-hydroxyacyl-coa-c"..i,
+      icon = icons .. "C"..i.."-Hydroxyacyl-CoA.png",
+      icon_size = 64,
+      subgroup = prefix .. "beta-oxidation",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "3-ketoacyl-coa-c"..i,
+      icon = icons .. "C"..i.."-Ketoacyl-CoA.png",
+      icon_size = 64,
+      subgroup = prefix .. "beta-oxidation",
+      stack_size = 200
+    }})
+end
