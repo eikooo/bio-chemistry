@@ -44,8 +44,55 @@ local glycolyseSubgroup = {
   group = prefix .. "bio-chemistry",
   order = "e"
 }
-data:extend({itemGroup, resourceSubgroup, sugarSubgroup, fatSubgroup, energySubgroup, proteinSubgroup, glycolyseSubgroup})
-
+local khreductionSubgroup = {
+  type = "item-subgroup",
+  name = prefix .. "kh-reduction",
+  group = prefix .. "bio-chemistry",
+  order = "e"
+}
+local wasteSubgroup = {
+  type = "item-subgroup",
+  name = prefix .. "waste",
+  group = prefix .. "bio-chemistry",
+  order = "z"
+}
+data:extend({itemGroup, resourceSubgroup, sugarSubgroup, fatSubgroup, energySubgroup, proteinSubgroup, glycolyseSubgroup,khreductionSubgroup,wasteSubgroup})
+data:extend(
+  {
+    {
+      type = "item",
+      name = prefix .. "waste",
+      icon = icons .. "Dreck.png",
+      icon_size = 64,
+      subgroup = prefix .. "waste",
+      stack_size = 200
+    },
+    {
+      type = "fluid",
+      name = prefix .. "waste-water",
+      icon = icons .. "Dreckwasser.png",
+      icon_size = 64,
+      subgroup = prefix .. "waste",
+      default_temperature = 15,
+      max_temperature = 100,
+      heat_capacity = "0.2KJ",
+      base_color = {r=0.5, g=0.41, b=0.13},
+      flow_color = {r=0.7, g=0.57, b=0.19},
+    },
+    {
+      type = "fluid",
+      name = prefix .. "urine",
+      icon = icons .. "EinfacherUrin.png",
+      icon_size = 64,
+      subgroup = prefix .. "waste",
+      default_temperature = 15,
+      max_temperature = 100,
+      heat_capacity = "0.2KJ",
+      base_color = {r=1, g=0.87, b=0},
+      flow_color = {r=1, g=0.91, b=0.35},
+    }     
+  }
+)
 data:extend(
   {
     {
@@ -184,6 +231,14 @@ data:extend(
       type = "item",
       name = prefix .. "meat-protein",
       icon = icons .. "Fleischprotein.png",
+      icon_size = 64,
+      subgroup = prefix .. "protein",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "milk-protein",
+      icon = icons .. "Milchprotein.png",
       icon_size = 64,
       subgroup = prefix .. "protein",
       stack_size = 200
@@ -332,6 +387,26 @@ data:extend(
       icon = icons .. "Pyruvat.png",
       icon_size = 64,
       subgroup = prefix .. "glycolyse",
+      stack_size = 200
+    }
+  }
+)
+data:extend(
+  {
+    {
+      type = "item",
+      name = prefix .. "fructose-1-phosphate",
+      icon = icons .. "Fructose-1-Phosphat.png",
+      icon_size = 64,
+      subgroup = prefix .. "kh-reduction",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "glyceraldehyde",
+      icon = icons .. "Glycerinaldehyd.png",
+      icon_size = 64,
+      subgroup = prefix .. "kh-reduction",
       stack_size = 200
     }
   }

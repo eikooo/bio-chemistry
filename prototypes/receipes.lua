@@ -13,10 +13,10 @@ data:extend(
       main_product = prefix .. "sucrose",
       results = {
         {type = "item", name = prefix .. "sucrose", amount = 3},
-        {type = "item", name = prefix .. "adp", amount = 2,probability=0.25},
-        {type = "item", name = prefix .. "pi", amount = 2,probability=0.25},
-        {type = "item", name = prefix .. "nad+", amount = 1,probability=0.25},
-        {type = "item", name = prefix .. "atp", amount = 1,probability=0.05}
+        {type = "item", name = prefix .. "adp", amount = 2, probability = 0.25},
+        {type = "item", name = prefix .. "pi", amount = 2, probability = 0.25},
+        {type = "item", name = prefix .. "nad+", amount = 1, probability = 0.25},
+        {type = "item", name = prefix .. "atp", amount = 1, probability = 0.05}
       }
     },
     {
@@ -41,12 +41,29 @@ data:extend(
       ingredients = {
         {type = "item", name = prefix .. "milk", amount = 10}
       },
-      main_product = prefix .. "lactose",
+      main_product =prefix .. "lactose",
       results = {
         {type = "item", name = prefix .. "lactose", amount = 10},
         {type = "fluid", name = "water", amount = 10},
         {type = "item", name = prefix .. "c4-butter", amount = 1},
-        {type = "item", name = prefix .. "atp", amount = 1, probability = 0.05}
+        {type = "item", name = prefix .. "atp", amount = 1, probability = 0.05},
+        {type = "item", name = prefix .. "milk-protein", amount = 3},
+        {type = "item", name = prefix .. "waste", amount = 3}
+      }
+    },
+    {
+      name = prefix .. "cut-meat",
+      type = "recipe",
+      category = "crafting",
+      energy_required = 5,
+      ingredients = {
+        {type = "item", name = prefix .. "meat", amount = 1}
+      },
+      main_product = prefix .. "meat-protein",
+      results = {
+        {type = "item", name = prefix .. "meat-protein", amount = 5},
+        {type = "item", name = prefix .. "atp", amount = 1, probability = 0.05},
+        {type = "item", name = prefix .. "waste", amount = 5}
       }
     }
   }
@@ -83,7 +100,7 @@ data:extend(
       ingredients = {
         {type = "item", name = prefix .. "glucose-6-phosphate", amount = 1}
       },
-      main_product="", --forces recipe-name
+      main_product = "", --forces recipe-name
       results = {
         {type = "item", name = prefix .. "fructose-6-phosphate", amount = 1}
       }
@@ -133,7 +150,7 @@ data:extend(
       ingredients = {
         {type = "item", name = prefix .. "dhap", amount = 1}
       },
-      main_product="", --forces recipe-name
+      main_product = "", --forces recipe-name
       results = {
         {type = "item", name = prefix .. "gap", amount = 1}
       }
@@ -185,7 +202,7 @@ data:extend(
       ingredients = {
         {type = "item", name = prefix .. "3-phosphoglycerate", amount = 1}
       },
-      main_product="", --forces recipe-name
+      main_product = "", --forces recipe-name
       results = {
         {type = "item", name = prefix .. "2-phosphoglycerate", amount = 1}
       }
@@ -222,6 +239,59 @@ data:extend(
       results = {
         {type = "item", name = prefix .. "pyruvate", amount = 1},
         {type = "item", name = prefix .. "atp", amount = 1}
+      }
+    }
+  }
+)
+data:extend(
+  {
+    {
+      name = prefix .. "fructokinase",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "kh-reduction",
+      energy_required = 5,
+      ingredients = {
+        {type = "item", name = prefix .. "fructose", amount = 1},
+        {type = "item", name = prefix .. "atp", amount = 1}
+      },
+      main_product=prefix .. "fructose-1-phosphate",
+      results = {
+        {type = "item", name = prefix .. "fructose-1-phosphate", amount = 1},
+        {type = "item", name = prefix .. "adp", amount = 1},
+        {type = "item", name = prefix .. "pi", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "aldolase-b",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "kh-reduction",
+      energy_required = 5,
+      ingredients = {
+        {type = "item", name = prefix .. "fructose-1-phosphate", amount = 1},
+      },
+      main_product=prefix .. "glyceraldehyde",
+      results = {
+        {type = "item", name = prefix .. "glyceraldehyde", amount = 1},
+        {type = "item", name = prefix .. "dhap", amount = 1},
+      }
+    },
+    {
+      name = prefix .. "Triokinase",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "kh-reduction",
+      energy_required = 5,
+      ingredients = {
+        {type = "item", name = prefix .. "glyceraldehyde", amount = 1},
+        {type = "item", name = prefix .. "atp", amount = 1}
+      },
+      main_product=prefix .. "gap",
+      results = {
+        {type = "item", name = prefix .. "gap", amount = 1},
+        {type = "item", name = prefix .. "adp", amount = 1},
+        {type = "item", name = prefix .. "pi", amount = 1}
       }
     }
   }
