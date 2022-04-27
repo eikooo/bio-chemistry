@@ -16,7 +16,8 @@ data:extend(
         {type = "item", name = prefix .. "adp", amount = 2, probability = 0.25},
         {type = "item", name = prefix .. "pi", amount = 2, probability = 0.25},
         {type = "item", name = prefix .. "nad+", amount = 1, probability = 0.25},
-        {type = "item", name = prefix .. "atp", amount = 1, probability = 0.05}
+        {type = "item", name = prefix .. "atp", amount = 1, probability = 0.05},
+        {type = "item", name = prefix .. "plant-protein", amount = 1}
       }
     },
     {
@@ -131,6 +132,23 @@ data:extend(
         {type = "item", name = prefix .. "arginine", amount = 1},
         {type = "item", name = prefix .. "glutamate", amount = 1},
         {type = "item", name = prefix .. "liponamid", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "proteolysis-plant",
+      type = "recipe",
+      category = "crafting",
+      energy_required = 15,
+      subgroup = prefix .. "amino-acid",
+      icon = icons .. "Cystein.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "plant-protein", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "cysteine", amount = 3},
+        {type = "item", name = prefix .. "vitamin-b5", amount = 3}
       }
     },
     {
@@ -885,7 +903,7 @@ data:extend(
       ingredients = {
         {type = "item", name = prefix .. "alpha-ketoglutarate", amount = 1},
         {type = "item", name = prefix .. "nad+", amount = 1},
-        {type = "item", name = prefix .. "coa", amount = 1},
+        {type = "item", name = prefix .. "coa", amount = 1}
       },
       main_product = "",
       results = {
@@ -905,13 +923,13 @@ data:extend(
       ingredients = {
         {type = "item", name = prefix .. "succinyl-coa", amount = 1},
         {type = "item", name = prefix .. "adp", amount = 1},
-        {type = "item", name = prefix .. "pi", amount = 1},
+        {type = "item", name = prefix .. "pi", amount = 1}
       },
       main_product = "",
       results = {
         {type = "item", name = prefix .. "succinate", amount = 1},
         {type = "item", name = prefix .. "coa", amount = 1},
-        {type = "item", name = prefix .. "atp", amount = 1},
+        {type = "item", name = prefix .. "atp", amount = 1}
       }
     },
     {
@@ -965,7 +983,98 @@ data:extend(
       results = {
         {type = "item", name = prefix .. "oxaloacetate", amount = 1},
         {type = "item", name = prefix .. "nadh", amount = 1},
-        {type = "item", name = prefix .. "h+", amount = 1},
+        {type = "item", name = prefix .. "h+", amount = 1}
+      }
+    }
+  }
+)
+data:extend(
+  {
+    {
+      name = prefix .. "pantothenate-kinase",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "coa-synthesis",
+      energy_required = 5,
+      icon = icons .. "Phosphopantothenat.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "vitamin-b5", amount = 1},
+        {type = "item", name = prefix .. "atp", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "4-phosphopantothenate", amount = 1},
+        {type = "item", name = prefix .. "adp", amount = 1}
+      }
+    },{
+      name = prefix .. "phosphopantothenate-cysteine-ligase",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "coa-synthesis",
+      energy_required = 5,
+      icon = icons .. "Pantothenoylcystein.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "4-phosphopantothenate", amount = 1},
+        {type = "item", name = prefix .. "cysteine", amount = 1},
+        {type = "item", name = prefix .. "atp", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "4-phosphopantothenoyl-l-cysteine", amount = 1},
+        {type = "item", name = prefix .. "adp", amount = 1},
+        {type = "item", name = prefix .. "pi", amount = 1},
+      }
+    },{
+      name = prefix .. "phosphopantothenoylcysteine-decarboxylase",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "coa-synthesis",
+      energy_required = 5,
+      icon = icons .. "Phosphopantethein.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "4-phosphopantothenoyl-l-cysteine", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "4-phosphopantethein", amount = 1},
+        
+      }
+    },{
+      name = prefix .. "pantetheine-phosphate-adenylyltransferase",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "coa-synthesis",
+      energy_required = 5,
+      icon = icons .. "Desphospho-CoA.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "4-phosphopantethein", amount = 1},
+        {type = "item", name = prefix .. "atp", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "dephospho-coa", amount = 1},
+        {type = "item", name = prefix .. "pi", amount = 2}
+      }
+    },{
+      name = prefix .. "dephospho-coa-kinase",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "coa-synthesis",
+      energy_required = 5,
+      icon = icons .. "CoA.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "dephospho-coa", amount = 1},
+        {type = "item", name = prefix .. "atp", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "coa", amount = 1},
+        {type = "item", name = prefix .. "adp", amount = 1}
       }
     }
   }

@@ -89,9 +89,21 @@ data:extend(
     },
     {
       type = "item-subgroup",
+      name = prefix .. "coa-synthesis",
+      group = prefix .. "bio-chemistry",
+      order = "k-a"
+    },
+    {
+      type = "item-subgroup",
       name = prefix .. "respiration",
       group = prefix .. "bio-chemistry",
       order = "l"
+    },
+    {
+      type = "item-subgroup",
+      name = prefix .. "vitamin",
+      group = prefix .. "bio-chemistry",
+      order = "x"
     },
     {
       type = "item-subgroup",
@@ -139,6 +151,18 @@ data:extend(
       icon = icons .. "HCO3.png",
       icon_size = 64,
       subgroup = prefix .. "leftovers",
+      stack_size = 200
+    }
+  }
+)
+data:extend(
+  {
+    {
+      type = "item",
+      name = prefix .. "vitamin-b5",
+      icon = icons .. "VitaminB5.png",
+      icon_size = 64,
+      subgroup = prefix .. "vitamin",
       stack_size = 200
     }
   }
@@ -315,14 +339,6 @@ data:extend(
       icon_size = 64,
       subgroup = prefix .. "energy",
       stack_size = 200
-    },
-    {
-      type = "item",
-      name = prefix .. "coa",
-      icon = icons .. "CoA.png",
-      icon_size = 64,
-      subgroup = prefix .. "energy",
-      stack_size = 200
     }
   }
 )
@@ -349,6 +365,14 @@ data:extend(
       type = "item",
       name = prefix .. "milk-protein",
       icon = icons .. "Milchprotein.png",
+      icon_size = 64,
+      subgroup = prefix .. "protein",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "plant-protein",
+      icon = icons .. "Pflanzenprotein.png",
       icon_size = 64,
       subgroup = prefix .. "protein",
       stack_size = 200
@@ -692,6 +716,14 @@ data:extend(
       icon_size = 64,
       subgroup = prefix .. "amino-acid",
       stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "cysteine",
+      icon = icons .. "Cystein.png",
+      icon_size = 64,
+      subgroup = prefix .. "amino-acid",
+      stack_size = 200
     }
   }
 )
@@ -864,6 +896,50 @@ data:extend(
       icon = icons .. "Malat.png",
       icon_size = 64,
       subgroup = prefix .. "citrate-cycle",
+      stack_size = 200
+    }
+  }
+)
+data:extend(
+  {
+    {
+      type = "item",
+      name = prefix .. "4-phosphopantothenate",
+      icon = icons .. "Phosphopantothenat.png",
+      icon_size = 64,
+      subgroup = prefix .. "coa-synthesis",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "4-phosphopantothenoyl-l-cysteine",
+      icon = icons .. "Pantothenoylcystein.png",
+      icon_size = 64,
+      subgroup = prefix .. "coa-synthesis",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "4-phosphopantethein",
+      icon = icons .. "Phosphopantethein.png",
+      icon_size = 64,
+      subgroup = prefix .. "coa-synthesis",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "dephospho-coa",
+      icon = icons .. "Desphospho-CoA.png",
+      icon_size = 64,
+      subgroup = prefix .. "coa-synthesis",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "coa",
+      icon = icons .. "CoA.png",
+      icon_size = 64,
+      subgroup = prefix .. "coa-synthesis",
       stack_size = 200
     }
   }
