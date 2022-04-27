@@ -34,7 +34,7 @@ data:extend(
         {type = "item", name = prefix .. "fructose", amount = 1}
       }
     },
-        {
+    {
       name = prefix .. "centrifuge-milk",
       type = "recipe",
       category = "advanced-crafting",
@@ -418,7 +418,7 @@ data:extend(
       icon = icons .. "Galactose.png",
       icon_size = 64,
       ingredients = {
-        {type = "item", name = prefix .. "lactose", amount = 1},
+        {type = "item", name = prefix .. "lactose", amount = 1}
       },
       main_product = "",
       results = {
@@ -543,7 +543,8 @@ data:extend(
         {type = "item", name = prefix .. "fatty-acid-c18", amount = 2},
         {type = "item", name = prefix .. "h+", amount = 3}
       }
-    },{
+    },
+    {
       name = prefix .. "lipase-butter",
       type = "recipe",
       category = "advanced-crafting",
@@ -1227,14 +1228,12 @@ data:extend(
       icon = icons .. "Arginin.png",
       icon_size = 64,
       ingredients = {
-        {type = "item", name = prefix .. "argininosuccinic-acid", amount = 1},
-        
+        {type = "item", name = prefix .. "argininosuccinic-acid", amount = 1}
       },
       main_product = "",
       results = {
         {type = "item", name = prefix .. "fumarate", amount = 1},
-        {type = "item", name = prefix .. "arginine", amount = 1},
-        
+        {type = "item", name = prefix .. "arginine", amount = 1}
       }
     },
     {
@@ -1270,6 +1269,130 @@ data:extend(
       main_product = "",
       results = {
         {type = "fluid", name = prefix .. "urine", amount = 3}
+      }
+    }
+  }
+)
+data:extend(
+  {
+    {
+      name = prefix .. "respiration-complex-i",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "respiration",
+      energy_required = 5,
+      icon = icons .. "e.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "nadh", amount = 1},
+        {type = "item", name = prefix .. "h+", amount = 5},
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "e-", amount = 2},
+        {type = "item", name = prefix .. "nad+", amount = 1},
+        {type = "item", name = prefix .. "h+-imr", amount = 4}
+      }
+    },{
+      name = prefix .. "respiration-complex-ii",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "respiration",
+      energy_required = 5,
+      icon = icons .. "Ubichinol.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "e-", amount = 2},
+        {type = "item", name = prefix .. "fadh2-2e-", amount = 1},
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "ubiquinol", amount = 2},
+      }
+    },{
+      name = prefix .. "respiration-complex-iii-step1",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "respiration",
+      energy_required = 5,
+      icon = icons .. "Semichinon.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "ubiquinol", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "semiquinone", amount = 1},
+        {type = "item", name = prefix .. "cyt-c-e-", amount = 1},
+        {type = "item", name = prefix .. "h+-imr", amount = 2}
+      }
+    },{
+      name = prefix .. "respiration-complex-iii-step2",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "respiration",
+      energy_required = 5,
+      icon = icons .. "Passierschein.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "semiquinone", amount = 1},
+        {type = "item", name = prefix .. "h+", amount = 2},
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "permit-ubiquinone", amount = 1}
+      }
+    },{
+      name = prefix .. "respiration-complex-iv-step1",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "respiration",
+      energy_required = 5,
+      icon = icons .. "Feoocu.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "permit-ubiquinone", amount = 1},
+        {type = "item", name = prefix .. "cyt-c-e-", amount = 2},
+        {type = "item", name = prefix .. "o2", amount = 1},
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "fe-o-o-cu", amount = 2},
+      }
+    },{
+      name = prefix .. "respiration-complex-iv-step2",
+      type = "recipe",
+      category = "advanced-crafting",
+      subgroup = prefix .. "respiration",
+      energy_required = 5,
+      icon = icons .. "H_IMR.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "fe-o-o-cu", amount = 1},
+        {type = "item", name = prefix .. "cyt-c-e-", amount = 2},
+        {type = "item", name = prefix .. "h+", amount = 8},
+      },
+      main_product = "",
+      results = {
+        {type = "fluid", name = "water", amount = 2},
+        {type = "item", name = prefix .. "h+-imr", amount = 4}
+      }
+    },{
+      name = prefix .. "atp-sythase",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "respiration",
+      energy_required = 5,
+      icon = icons .. "ATP.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "adp", amount = 3},
+        {type = "item", name = prefix .. "pi", amount = 3},
+        {type = "item", name = prefix .. "h+-imr", amount = 9}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "atp", amount = 3}
       }
     }
   }

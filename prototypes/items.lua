@@ -987,3 +987,71 @@ data:extend(
     }
   }
 )
+data:extend(
+  {
+    {
+      type = "item",
+      name = prefix .. "e-",
+      icon = icons .. "e.png",
+      icon_size = 64,
+      subgroup = prefix .. "respiration",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "ubiquinol",
+      icon = icons .. "Ubichinol.png",
+      icon_size = 64,
+      subgroup = prefix .. "respiration",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "semiquinone",
+      icon = icons .. "Semichinon.png",
+      icon_size = 64,
+      subgroup = prefix .. "respiration",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "permit-ubiquinone",
+      icon = icons .. "Passierschein.png",
+      icon_size = 64,
+      subgroup = prefix .. "respiration",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "fe-o-o-cu",
+      icon = icons .. "Feoocu.png",
+      icon_size = 64,
+      subgroup = prefix .. "respiration",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "cyt-c",
+      icon = icons .. "Cyt-c.png",
+      icon_size = 64,
+      subgroup = prefix .. "respiration",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "cyt-c-e-",
+      icon = icons .. "Cyt-c_e.png",
+      icon_size = 64,
+      subgroup = prefix .. "respiration",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "h+-imr",
+      icon = icons .. "H_IMR.png",
+      icon_size = 64,
+      subgroup = prefix .. "respiration",
+      stack_size = 200
+    }
+  }
+)
