@@ -868,16 +868,3 @@ data:extend(
     }
   }
 )
-
-data:extend(
-  {
-    {
-      type = "item",
-      name = prefix .. "fadh2-succinate-dehydrogenase+2e-",
-      icon = icons .. "NH4.png",
-      icon_size = 64,
-      subgroup = prefix .. "respiration",
-      stack_size = 200
-    }
-  }
-)
