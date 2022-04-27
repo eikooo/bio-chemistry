@@ -265,7 +265,7 @@ local resource = {
   collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
   selection_box = {{ -0.5, -0.5}, {0.5, 0.5}}, -- full tile
   flags = {"placeable-neutral"},
-  --map_generator_bounding_box = {{ -0.49, -0.49}, {0.49, 0.49}},
+  map_generator_bounding_box = {{ -0.49, -0.49}, {0.49, 0.49}},
   map_grid = false,
   minable = 
   {
@@ -303,8 +303,7 @@ local resource = {
   {
     control = prefix .. "cows",
     order = "d",
-    --sharpness = 0.2,
-    sharpness = 15/16,
+    sharpness = 0.2,
     richness_multiplier = 1500,
     richness_multiplier_distance_bonus = 20,
     richness_base = 10,
