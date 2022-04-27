@@ -633,6 +633,22 @@ data:extend(
       icon_size = 64,
       subgroup = prefix .. "lipolysis",
       stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "fatty-acid-c4",
+      icon = icons .. "C18-FS.png",
+      icon_size = 64,
+      subgroup = prefix .. "lipolysis",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "acyl-amp-c4",
+      icon = icons .. "C18-Acyl-AMP.png",
+      icon_size = 64,
+      subgroup = prefix .. "lipolysis",
+      stack_size = 200
     }
   }
 )

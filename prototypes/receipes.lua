@@ -543,6 +543,24 @@ data:extend(
         {type = "item", name = prefix .. "fatty-acid-c18", amount = 2},
         {type = "item", name = prefix .. "h+", amount = 3}
       }
+    },{
+      name = prefix .. "lipase-butter",
+      type = "recipe",
+      category = "advanced-crafting",
+      subgroup = prefix .. "lipolysis",
+      energy_required = 5,
+      icon = icons .. "Glycerin.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "c4-butter", amount = 1},
+        {type = "fluid", name = "water", amount = 3}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "glycerol", amount = 1},
+        {type = "item", name = prefix .. "fatty-acid-c4", amount = 3},
+        {type = "item", name = prefix .. "h+", amount = 3}
+      }
     },
     {
       name = prefix .. "glycerol-kinase",
@@ -606,7 +624,7 @@ data:extend(
       category = "advanced-crafting",
       subgroup = prefix .. "lipolysis",
       energy_required = 5,
-      icon = icons .. "Glycerin.png",
+      icon = icons .. "C18-CoA.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "acyl-amp-c18", amount = 1},
@@ -615,6 +633,42 @@ data:extend(
       main_product = "",
       results = {
         {type = "item", name = prefix .. "acyl-coa-c18", amount = 1},
+        {type = "item", name = prefix .. "amp", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "thiokinase-step1-c4",
+      type = "recipe",
+      category = "advanced-crafting",
+      subgroup = prefix .. "lipolysis",
+      energy_required = 5,
+      icon = icons .. "C18-Acyl-AMP.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "fatty-acid-c4", amount = 1},
+        {type = "item", name = prefix .. "atp", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "acyl-amp-c4", amount = 1},
+        {type = "item", name = prefix .. "pi", amount = 2}
+      }
+    },
+    {
+      name = prefix .. "thiokinase-step2-c4",
+      type = "recipe",
+      category = "advanced-crafting",
+      subgroup = prefix .. "lipolysis",
+      energy_required = 5,
+      icon = icons .. "C4-CoA.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "acyl-amp-c4", amount = 1},
+        {type = "item", name = prefix .. "coa", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "acyl-coa-c4", amount = 1},
         {type = "item", name = prefix .. "amp", amount = 1}
       }
     }
