@@ -735,7 +735,7 @@ data:extend(
       name = prefix .. "glutamine",
       icon = icons .. "Glutamin.png",
       icon_size = 64,
-      subgroup = prefix .. "urea-cycle",
+      subgroup = prefix .. "amino-acid",
       stack_size = 200
     },
     {
@@ -743,7 +743,7 @@ data:extend(
       name = prefix .. "aspartate",
       icon = icons .. "Aspartat.png",
       icon_size = 64,
-      subgroup = prefix .. "urea-cycle",
+      subgroup = prefix .. "amino-acid",
       stack_size = 200
     },
     {
@@ -751,7 +751,7 @@ data:extend(
       name = prefix .. "alanine",
       icon = icons .. "Alanin.png",
       icon_size = 64,
-      subgroup = prefix .. "urea-cycle",
+      subgroup = prefix .. "amino-acid",
       stack_size = 200
     },
     {
@@ -759,7 +759,7 @@ data:extend(
       name = prefix .. "arginine",
       icon = icons .. "Arginin.png",
       icon_size = 64,
-      subgroup = prefix .. "urea-cycle",
+      subgroup = prefix .. "amino-acid",
       stack_size = 200
     },
     {
@@ -767,7 +767,7 @@ data:extend(
       name = prefix .. "imino-acid-glutamine",
       icon = icons .. "Imino-Zwischenprodukt.png",
       icon_size = 64,
-      subgroup = prefix .. "urea-cycle",
+      subgroup = prefix .. "amino-acid",
       stack_size = 200
     }
   }
@@ -894,6 +894,14 @@ data:extend(
       type = "item",
       name = prefix .. "malate",
       icon = icons .. "Malat.png",
+      icon_size = 64,
+      subgroup = prefix .. "citrate-cycle",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "fadh2-2e-",
+      icon = icons .. "FADH2_e.png",
       icon_size = 64,
       subgroup = prefix .. "citrate-cycle",
       stack_size = 200

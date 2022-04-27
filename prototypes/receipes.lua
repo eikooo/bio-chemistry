@@ -947,7 +947,7 @@ data:extend(
       main_product = "",
       results = {
         {type = "item", name = prefix .. "fumarate", amount = 1},
-        {type = "item", name = prefix .. "fadh2", amount = 1}
+        {type = "item", name = prefix .. "fadh2-2e-", amount = 1}
       }
     },
     {
@@ -1007,7 +1007,8 @@ data:extend(
         {type = "item", name = prefix .. "4-phosphopantothenate", amount = 1},
         {type = "item", name = prefix .. "adp", amount = 1}
       }
-    },{
+    },
+    {
       name = prefix .. "phosphopantothenate-cysteine-ligase",
       type = "recipe",
       category = "crafting",
@@ -1024,9 +1025,10 @@ data:extend(
       results = {
         {type = "item", name = prefix .. "4-phosphopantothenoyl-l-cysteine", amount = 1},
         {type = "item", name = prefix .. "adp", amount = 1},
-        {type = "item", name = prefix .. "pi", amount = 1},
+        {type = "item", name = prefix .. "pi", amount = 1}
       }
-    },{
+    },
+    {
       name = prefix .. "phosphopantothenoylcysteine-decarboxylase",
       type = "recipe",
       category = "crafting",
@@ -1039,10 +1041,10 @@ data:extend(
       },
       main_product = "",
       results = {
-        {type = "item", name = prefix .. "4-phosphopantethein", amount = 1},
-        
+        {type = "item", name = prefix .. "4-phosphopantethein", amount = 1}
       }
-    },{
+    },
+    {
       name = prefix .. "pantetheine-phosphate-adenylyltransferase",
       type = "recipe",
       category = "crafting",
@@ -1059,7 +1061,8 @@ data:extend(
         {type = "item", name = prefix .. "dephospho-coa", amount = 1},
         {type = "item", name = prefix .. "pi", amount = 2}
       }
-    },{
+    },
+    {
       name = prefix .. "dephospho-coa-kinase",
       type = "recipe",
       category = "crafting",
@@ -1075,6 +1078,122 @@ data:extend(
       results = {
         {type = "item", name = prefix .. "coa", amount = 1},
         {type = "item", name = prefix .. "adp", amount = 1}
+      }
+    }
+  }
+)
+data:extend(
+  {
+    {
+      name = prefix .. "carbamoyl-phosphate-synthetase-i",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "urea-cycle",
+      energy_required = 5,
+      icon = icons .. "Carbamylphosphat.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "nh4+", amount = 1},
+        {type = "item", name = prefix .. "hco3-", amount = 1},
+        {type = "item", name = prefix .. "atp", amount = 2}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "carbamoyl-phosphate", amount = 1},
+        {type = "item", name = prefix .. "adp", amount = 2},
+        {type = "item", name = prefix .. "pi", amount = 2}
+      }
+    },
+    {
+      name = prefix .. "ornithine-transcarbamylase-otc",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "urea-cycle",
+      energy_required = 5,
+      icon = icons .. "Citrullin.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "carbamoyl-phosphate", amount = 1},
+        {type = "item", name = prefix .. "ornithine", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "citrulline", amount = 1},
+        {type = "item", name = prefix .. "pi", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "argininosuccinate-synthase",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "urea-cycle",
+      energy_required = 5,
+      icon = icons .. "Argininosuccinat.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "citrulline", amount = 1},
+        {type = "item", name = prefix .. "aspartate", amount = 1},
+        {type = "item", name = prefix .. "atp", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "argininosuccinic-acid", amount = 1},
+        {type = "item", name = prefix .. "amp", amount = 1},
+        {type = "item", name = prefix .. "pi", amount = 2}
+      }
+    },
+    {
+      name = prefix .. "argininosuccinate-lyase",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "urea-cycle",
+      energy_required = 5,
+      icon = icons .. "Arginin.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "argininosuccinic-acid", amount = 1},
+        
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "fumarate", amount = 1},
+        {type = "item", name = prefix .. "arginine", amount = 1},
+        
+      }
+    },
+    {
+      name = prefix .. "arginase",
+      type = "recipe",
+      category = "advanced-crafting",
+      subgroup = prefix .. "urea-cycle",
+      energy_required = 5,
+      icon = icons .. "Ornithin.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "arginine", amount = 1},
+        {type = "fluid", name = "water", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "ornithine", amount = 1},
+        {type = "item", name = prefix .. "urea", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "create-simple-urine",
+      type = "recipe",
+      category = "advanced-crafting",
+      subgroup = prefix .. "urea-cycle",
+      energy_required = 5,
+      icon = icons .. "EinfacherUrin.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "urea", amount = 1},
+        {type = "fluid", name = prefix .. "waste-water", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "fluid", name = prefix .. "urine", amount = 3}
       }
     }
   }
