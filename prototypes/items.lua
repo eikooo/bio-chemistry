@@ -53,6 +53,12 @@ data:extend(
     },
     {
       type = "item-subgroup",
+      name = prefix .. "lactose-reduction",
+      group = prefix .. "bio-chemistry",
+      order = "e-a"
+    },
+    {
+      type = "item-subgroup",
       name = prefix .. "pyruvate-reduction",
       group = prefix .. "bio-chemistry",
       order = "f"
@@ -545,6 +551,19 @@ data:extend(
     }
   }
 )
+data:extend(
+  {
+    {
+      type = "item",
+      name = prefix .. "glactose",
+      icon = icons .. "Galactose.png",
+      icon_size = 64,
+      subgroup = prefix .. "lactose-reduction",
+      stack_size = 200
+    }
+  }
+)
+
 data:extend(
   {
     {

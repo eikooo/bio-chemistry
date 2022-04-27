@@ -34,7 +34,7 @@ data:extend(
         {type = "item", name = prefix .. "fructose", amount = 1}
       }
     },
-    {
+        {
       name = prefix .. "centrifuge-milk",
       type = "recipe",
       category = "advanced-crafting",
@@ -407,6 +407,28 @@ data:extend(
     }
   }
 )
+data:extend(
+  {
+    {
+      name = prefix .. "lactase",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "lactose-reduction",
+      energy_required = 5,
+      icon = icons .. "Galactose.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "lactose", amount = 1},
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "glucose", amount = 1},
+        {type = "item", name = prefix .. "glactose", amount = 1}
+      }
+    }
+  }
+)
+
 data:extend(
   {
     {
