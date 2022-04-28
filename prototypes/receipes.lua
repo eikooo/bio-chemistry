@@ -291,6 +291,7 @@ data:extend(
         {type = "item", name = prefix .. "adp", amount = 1},
         {type = "item", name = prefix .. "pi", amount = 1}
       },
+      main_product = "",
       results = {
         {type = "item", name = prefix .. "3-phosphoglycerate", amount = 1},
         {type = "item", name = prefix .. "atp", amount = 1}
