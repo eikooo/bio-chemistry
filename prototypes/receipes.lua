@@ -216,7 +216,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "glycolyse",
       energy_required = 5,
-      icon = icons .. "Fructose-1_6-BisPhosphat.png",
+      icon = icons .. "Fructose-1_6-Bisphosphat.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "fructose-6-phosphate", amount = 1},
@@ -266,7 +266,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "glycolyse",
       energy_required = 5,
-      icon = icons .. "1_3-BisPhosphoglycerat.png",
+      icon = icons .. "1_3-Bisphosphoglycerat.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "gap", amount = 1},
@@ -923,7 +923,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "citrate-cycle",
       energy_required = 5,
-      icon = icons .. "isocitrat.png",
+      icon = icons .. "Isocitrat.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "citrate", amount = 1}

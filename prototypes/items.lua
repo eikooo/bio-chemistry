@@ -472,7 +472,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "fructose-1,6-biphosphate",
-      icon = icons .. "Fructose-1_6-BisPhosphat.png",
+      icon = icons .. "Fructose-1_6-Bisphosphat.png",
       icon_size = 64,
       subgroup = prefix .. "glycolyse",
       stack_size = 200
@@ -496,7 +496,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "1,3-biphosphoglycerate",
-      icon = icons .. "1_3-BisPhosphoglycerat.png",
+      icon = icons .. "1_3-Bisphosphoglycerat.png",
       icon_size = 64,
       subgroup = prefix .. "glycolyse",
       stack_size = 200
