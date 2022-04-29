@@ -402,7 +402,9 @@ data:extend(
       icon = icons .. "Zuckerrohr.png",
       icon_size = 64,
       subgroup = prefix .. "sugar",
-      stack_size = 200
+      stack_size = 200,
+      fuel_category = "chemical",
+      fuel_value = "2MJ",
     },
     {
       type = "item",
@@ -418,7 +420,9 @@ data:extend(
       icon = icons .. "Glucose.png",
       icon_size = 64,
       subgroup = prefix .. "sugar",
-      stack_size = 200
+      stack_size = 200,
+      fuel_category = "chemical",
+      fuel_value = "6MJ",
     },
     {
       type = "item",
