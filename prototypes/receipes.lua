@@ -720,7 +720,7 @@ for i = 18, 4, -2 do
         category = "crafting",
         subgroup = prefix .. "lipolysis",
         energy_required = 5,
-        icon = icons .. "C" .. i .. "-Enoyl.png",
+        icon = icons .. "C" .. i .. "-Ketoacyl-CoA.png",
         icon_size = 64,
         ingredients = {
           {type = "item", name = prefix .. "l-3-hydroxyacyl-coa-c" .. i, amount = 1},
@@ -1394,6 +1394,21 @@ data:extend(
       main_product = "",
       results = {
         {type = "item", name = prefix .. "atp", amount = 3}
+      }
+    },{
+      name = prefix .. "simple-gas-exchange",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "respiration",
+      energy_required = 5,
+      icon = icons .. "O2.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "co2", amount = 4},
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "o2", amount = 4}
       }
     }
   }
