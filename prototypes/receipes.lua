@@ -77,7 +77,7 @@ data:extend(
       },
       main_product = prefix .. "sunflower-seeds",
       results = {
-        {type = "item", name = prefix .. "sunflower-seeds", amount = 100},
+        {type = "item", name = prefix .. "sunflower-seeds", amount = 2},
         {type = "item", name = prefix .. "fad", amount = 1, probability = 0.1},
         {type = "item", name = prefix .. "nad+", amount = 1, probability = 0.1}
       }
@@ -88,7 +88,7 @@ data:extend(
       category = "crafting",
       energy_required = 15,
       ingredients = {
-        {type = "item", name = prefix .. "sunflower-seeds", amount = 500}
+        {type = "item", name = prefix .. "sunflower-seeds", amount = 10}
       },
       main_product = prefix .. "sunflower-oil-c18",
       results = {
