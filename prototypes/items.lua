@@ -1,5 +1,6 @@
 local prefix = "ego:bio-"
 local icons = "__bio-chemistry__/graphics/icons/"
+
 data:extend(
   {
     {
@@ -119,6 +120,12 @@ data:extend(
     },
     {
       type = "item-subgroup",
+      name = prefix .. "modules",
+      group = prefix .. "bio-chemistry",
+      order = "y-a"
+    },
+    {
+      type = "item-subgroup",
       name = prefix .. "waste",
       group = prefix .. "bio-chemistry",
       order = "z"
@@ -209,6 +216,19 @@ data:extend(
     }
   }
 )
+
+data:extend(
+  {
+    {
+      type = "item",
+      name = prefix .. "blood",
+      icon = icons .. "Blut.png",
+      icon_size = 64,
+      stack_size = 200
+    }
+  }
+)
+
 data:extend(
   {
     {
@@ -1059,3 +1079,17 @@ data:extend(
     }
   }
 )
+
+data:extend(
+  {
+    {
+      type = "item",
+      name = prefix .. "coenzyme-q",
+      icon = icons .. "Coenzym-Q.png",
+      icon_size = 64,
+      stack_size = 200
+    },
+  }
+)
+
+

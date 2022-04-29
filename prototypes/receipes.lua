@@ -1,5 +1,7 @@
 local prefix = "ego:bio-"
 local icons = "__bio-chemistry__/graphics/icons/"
+local specialModuleSpeedFactor = 1000
+
 data:extend(
   {
     {
@@ -1281,9 +1283,10 @@ data:extend(
       type = "recipe",
       category = "crafting",
       subgroup = prefix .. "respiration",
-      energy_required = 5,
+      energy_required = 5 * specialModuleSpeedFactor,
       icon = icons .. "e.png",
       icon_size = 64,
+      
       ingredients = {
         {type = "item", name = prefix .. "nadh", amount = 1},
         {type = "item", name = prefix .. "h+", amount = 5},
@@ -1299,7 +1302,7 @@ data:extend(
       type = "recipe",
       category = "crafting",
       subgroup = prefix .. "respiration",
-      energy_required = 5,
+      energy_required = 5 * specialModuleSpeedFactor * specialModuleSpeedFactor,
       icon = icons .. "Ubichinol.png",
       icon_size = 64,
       ingredients = {
@@ -1315,7 +1318,7 @@ data:extend(
       type = "recipe",
       category = "crafting",
       subgroup = prefix .. "respiration",
-      energy_required = 5,
+      energy_required = 5 * specialModuleSpeedFactor,
       icon = icons .. "Semichinon.png",
       icon_size = 64,
       ingredients = {
@@ -1332,7 +1335,7 @@ data:extend(
       type = "recipe",
       category = "crafting",
       subgroup = prefix .. "respiration",
-      energy_required = 5,
+      energy_required = 5 * specialModuleSpeedFactor,
       icon = icons .. "Passierschein.png",
       icon_size = 64,
       ingredients = {
@@ -1348,7 +1351,7 @@ data:extend(
       type = "recipe",
       category = "crafting",
       subgroup = prefix .. "respiration",
-      energy_required = 5,
+      energy_required = 5 * specialModuleSpeedFactor * specialModuleSpeedFactor,
       icon = icons .. "Feoocu.png",
       icon_size = 64,
       ingredients = {
@@ -1411,5 +1414,80 @@ data:extend(
         {type = "item", name = prefix .. "o2", amount = 4}
       }
     }
+  }
+)
+
+data:extend(
+  {
+    {
+      name = prefix .. "fe:s-cluster-a-module",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "modules",
+      ingredients = {
+        {type = "item", name = "iron-plate", amount = 1},
+        {type = "item", name = "sulfur", amount = 4},
+        {type = "item", name = prefix .. "cysteine", amount = 4},
+      },
+      result = prefix .. "fe:s-cluster-a-module"
+    },
+    {
+      name = prefix .. "fe:s-cluster-b-module",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "modules",
+      ingredients = {
+        {type = "item", name = "iron-plate", amount = 2},
+        {type = "item", name = "sulfur", amount = 6},
+        {type = "item", name = prefix .. "cysteine", amount = 4},
+      },
+      result = prefix .. "fe:s-cluster-b-module"
+    },
+    {
+      name = prefix .. "fe:s-cluster-c-module",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "modules",
+      ingredients = {
+        {type = "item", name = "iron-plate", amount = 4},
+        {type = "item", name = "sulfur", amount = 8},
+        {type = "item", name = prefix .. "cysteine", amount = 4},
+      },
+      result = prefix .. "fe:s-cluster-c-module"
+    },
+    {
+      name = prefix .. "cub-module",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "modules",
+      ingredients = {
+        {type = "item", name = "copper-plate", amount = 2},
+        {type = "item", name = "iron-gear-wheel", amount = 2},
+      },
+      result = prefix .. "cub-module"
+    },
+    {
+      name = prefix .. "heme-a3-module",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "modules",
+      ingredients = {
+        {type = "item", name = prefix .. "blood", amount = 1},
+        {type = "item", name = "iron-plate", amount = 1},
+      },
+      result = prefix .. "heme-a3-module"
+    },
+    {
+      name = prefix .. "ubichinon-module",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "modules",
+      ingredients = {
+        {type = "item", name = prefix .. "coenzyme-q", amount = 1},
+        {type = "item", name = "iron-plate", amount = 1},
+        {type = "item", name = "copper-plate", amount = 1},
+      },
+      result = prefix .. "ubichinon-module"
+    },
   }
 )
