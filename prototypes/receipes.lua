@@ -19,7 +19,7 @@ data:extend(
         {type = "item", name = prefix .. "pi", amount = 1, probability = 0.10},
         {type = "item", name = prefix .. "nad+", amount = 1, probability = 0.10},
         {type = "item", name = prefix .. "atp", amount = 1, probability = 0.01},
-        {type = "item", name = prefix .. "plant-protein", amount = 0.25}
+        {type = "item", name = prefix .. "plant-protein",amount = 1, probability = 0.25}
       }
     },
     {
@@ -588,7 +588,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "lipolysis",
       energy_required = 5,
-      icon = icons .. "DHAP.png",
+      icon = icons .. "dhap.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "l-glycerol-3-phosphate", amount = 1},
@@ -864,7 +864,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "amino-acid",
       energy_required = 5,
-      icon = icons .. "Pyruvat.png",
+      icon = icons .. "pyruvat.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "alanine", amount = 1},
@@ -1384,7 +1384,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "respiration",
       energy_required = 5,
-      icon = icons .. "ATP.png",
+      icon = icons .. "atp.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "adp", amount = 3},

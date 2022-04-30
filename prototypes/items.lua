@@ -279,7 +279,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "atp",
-      icon = icons .. "ATP.png",
+      icon = icons .. "atp.png",
       icon_size = 64,
       subgroup = prefix .. "energy",
       fuel_category = "chemical",
@@ -289,7 +289,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "adp",
-      icon = icons .. "ADP.png",
+      icon = icons .. "adp.png",
       icon_size = 64,
       subgroup = prefix .. "energy",
       stack_size = 200
@@ -297,7 +297,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "amp",
-      icon = icons .. "AMP.png",
+      icon = icons .. "amp.png",
       icon_size = 64,
       subgroup = prefix .. "energy",
       stack_size = 200
@@ -305,7 +305,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "pi",
-      icon = icons .. "Phosphat.png",
+      icon = icons .. "phosphat.png",
       icon_size = 64,
       subgroup = prefix .. "energy",
       stack_size = 200
@@ -365,6 +365,14 @@ data:extend(
       icon_size = 64,
       subgroup = prefix .. "energy",
       stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "gtp",
+      icon = icons .. "adp.png",
+      icon_size = 64,
+      subgroup = prefix .. "energy",
+      stack_size = 200
     }
   }
 )
@@ -419,7 +427,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "sugar-cane",
-      icon = icons .. "Zuckerrohr.png",
+      icon = icons .. "zuckerrohr.png",
       icon_size = 64,
       subgroup = prefix .. "sugar",
       stack_size = 200,
@@ -429,7 +437,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "sucrose",
-      icon = icons .. "Saccharose.png",
+      icon = icons .. "saccharose.png",
       icon_size = 64,
       subgroup = prefix .. "sugar",
       stack_size = 200
@@ -437,7 +445,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "glucose",
-      icon = icons .. "Glucose.png",
+      icon = icons .. "glucose.png",
       icon_size = 64,
       subgroup = prefix .. "sugar",
       stack_size = 200,
@@ -447,7 +455,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "fructose",
-      icon = icons .. "Fructose.png",
+      icon = icons .. "fructose.png",
       icon_size = 64,
       subgroup = prefix .. "sugar",
       stack_size = 200
@@ -476,7 +484,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "glucose-6-phosphate",
-      icon = icons .. "Glucose-6-Phosphat.png",
+      icon = icons .. "glucose-6-phosphat.png",
       icon_size = 64,
       subgroup = prefix .. "glycolyse",
       stack_size = 200
@@ -484,7 +492,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "fructose-6-phosphate",
-      icon = icons .. "Fructose-6-Phosphat.png",
+      icon = icons .. "fructose-6-phosphat.png",
       icon_size = 64,
       subgroup = prefix .. "glycolyse",
       stack_size = 200
@@ -492,7 +500,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "fructose-1,6-biphosphate",
-      icon = icons .. "Fructose-1_6-Bisphosphat.png",
+      icon = icons .. "fructose-1-6-bisphosphat.png",
       icon_size = 64,
       subgroup = prefix .. "glycolyse",
       stack_size = 200
@@ -500,7 +508,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "dhap",
-      icon = icons .. "DHAP.png",
+      icon = icons .. "dhap.png",
       icon_size = 64,
       subgroup = prefix .. "glycolyse",
       stack_size = 200
@@ -508,7 +516,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "gap",
-      icon = icons .. "GAP.png",
+      icon = icons .. "gap.png",
       icon_size = 64,
       subgroup = prefix .. "glycolyse",
       stack_size = 200
@@ -516,7 +524,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "1,3-biphosphoglycerate",
-      icon = icons .. "1_3-Bisphosphoglycerat.png",
+      icon = icons .. "1-3-bisphosphoglycerat.png",
       icon_size = 64,
       subgroup = prefix .. "glycolyse",
       stack_size = 200
@@ -524,7 +532,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "3-phosphoglycerate",
-      icon = icons .. "3-Phosphoglycerat.png",
+      icon = icons .. "3-phosphoglycerat.png",
       icon_size = 64,
       subgroup = prefix .. "glycolyse",
       stack_size = 200
@@ -532,7 +540,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "2-phosphoglycerate",
-      icon = icons .. "2-Phosphoglycerat.png",
+      icon = icons .. "2-phosphoglycerat.png",
       icon_size = 64,
       subgroup = prefix .. "glycolyse",
       stack_size = 200
@@ -548,7 +556,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "pyruvate",
-      icon = icons .. "Pyruvat.png",
+      icon = icons .. "pyruvat.png",
       icon_size = 64,
       subgroup = prefix .. "glycolyse",
       stack_size = 200
@@ -560,7 +568,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "fructose-1-phosphate",
-      icon = icons .. "Fructose-1-Phosphat.png",
+      icon = icons .. "fructose-1-phosphat.png",
       icon_size = 64,
       subgroup = prefix .. "kh-reduction",
       stack_size = 200
@@ -568,7 +576,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "glyceraldehyde",
-      icon = icons .. "Glycerinaldehyd.png",
+      icon = icons .. "glycerinaldehyd.png",
       icon_size = 64,
       subgroup = prefix .. "kh-reduction",
       stack_size = 200
