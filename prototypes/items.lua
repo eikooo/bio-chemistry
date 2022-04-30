@@ -137,7 +137,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "nh4+",
-      icon = icons .. "NH4.png",
+      icon = icons .. "nh4.png",
       icon_size = 64,
       subgroup = prefix .. "leftovers",
       stack_size = 200
@@ -145,7 +145,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "co2",
-      icon = icons .. "CO2.png",
+      icon = icons .. "co2.png",
       icon_size = 64,
       subgroup = prefix .. "leftovers",
       stack_size = 200
@@ -153,7 +153,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "o2",
-      icon = icons .. "O2.png",
+      icon = icons .. "o2.png",
       icon_size = 64,
       subgroup = prefix .. "leftovers",
       stack_size = 200
@@ -161,7 +161,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "hco3-",
-      icon = icons .. "HCO3.png",
+      icon = icons .. "hco3.png",
       icon_size = 64,
       subgroup = prefix .. "leftovers",
       stack_size = 200
@@ -173,7 +173,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "vitamin-b5",
-      icon = icons .. "VitaminB5.png",
+      icon = icons .. "vitaminb5.png",
       icon_size = 64,
       subgroup = prefix .. "vitamin",
       stack_size = 200
@@ -185,7 +185,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "waste",
-      icon = icons .. "Dreck.png",
+      icon = icons .. "dreck.png",
       icon_size = 64,
       subgroup = prefix .. "waste",
       stack_size = 200
@@ -193,7 +193,7 @@ data:extend(
     {
       type = "fluid",
       name = prefix .. "waste-water",
-      icon = icons .. "Dreckwasser.png",
+      icon = icons .. "dreckwasser.png",
       icon_size = 64,
       subgroup = prefix .. "waste",
       default_temperature = 15,
@@ -205,7 +205,7 @@ data:extend(
     {
       type = "fluid",
       name = prefix .. "urine",
-      icon = icons .. "EinfacherUrin.png",
+      icon = icons .. "einfacherurin.png",
       icon_size = 64,
       subgroup = prefix .. "waste",
       default_temperature = 15,
@@ -222,7 +222,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "blood",
-      icon = icons .. "Blut.png",
+      icon = icons .. "blut.png",
       icon_size = 64,
       stack_size = 200
     }
@@ -234,7 +234,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "sunflower",
-      icon = icons .. "Sonnenblume.png",
+      icon = icons .. "sonnenblume.png",
       icon_size = 64,
       subgroup = prefix .. "fat",
       stack_size = 200
@@ -242,7 +242,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "c4-butter",
-      icon = icons .. "Butter.png",
+      icon = icons .. "butter.png",
       icon_size = 64,
       subgroup = prefix .. "fat",
       stack_size = 200
@@ -250,7 +250,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "cholesterol",
-      icon = icons .. "Cholesterin.png",
+      icon = icons .. "cholesterin.png",
       icon_size = 64,
       subgroup = prefix .. "fat",
       stack_size = 200
@@ -258,7 +258,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "sunflower-seeds",
-      icon = icons .. "Sonnenblumenkerne.png",
+      icon = icons .. "sonnenblumenkerne.png",
       icon_size = 64,
       subgroup = prefix .. "fat",
       stack_size = 200
@@ -266,7 +266,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "sunflower-oil-c18",
-      icon = icons .. "Sonnenblumenoel.png",
+      icon = icons .. "sonnenblumenoel.png",
       icon_size = 64,
       subgroup = prefix .. "fat",
       stack_size = 200
@@ -313,7 +313,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "nad+",
-      icon = icons .. "NAD.png",
+      icon = icons .. "nad.png",
       icon_size = 64,
       subgroup = prefix .. "energy",
       stack_size = 200
@@ -321,7 +321,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "nadh",
-      icon = icons .. "NADH.png",
+      icon = icons .. "nadh.png",
       icon_size = 64,
       subgroup = prefix .. "energy",
       stack_size = 200
@@ -329,7 +329,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "h+",
-      icon = icons .. "H.png",
+      icon = icons .. "h.png",
       icon_size = 64,
       subgroup = prefix .. "energy",
       stack_size = 200
@@ -337,7 +337,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "fad",
-      icon = icons .. "FAD.png",
+      icon = icons .. "fad.png",
       icon_size = 64,
       subgroup = prefix .. "energy",
       stack_size = 200
@@ -345,7 +345,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "fadh2",
-      icon = icons .. "FADH2.png",
+      icon = icons .. "fadh2.png",
       icon_size = 64,
       subgroup = prefix .. "energy",
       stack_size = 200
@@ -353,7 +353,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "nadp",
-      icon = icons .. "NADP.png",
+      icon = icons .. "nadp.png",
       icon_size = 64,
       subgroup = prefix .. "energy",
       stack_size = 200
@@ -361,7 +361,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "nadph",
-      icon = icons .. "NADPH.png",
+      icon = icons .. "nadph.png",
       icon_size = 64,
       subgroup = prefix .. "energy",
       stack_size = 200
@@ -382,7 +382,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "meat",
-      icon = icons .. "Fleisch.png",
+      icon = icons .. "fleisch.png",
       icon_size = 64,
       subgroup = prefix .. "protein",
       stack_size = 200
@@ -390,7 +390,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "meat-protein",
-      icon = icons .. "Fleischprotein.png",
+      icon = icons .. "fleischprotein.png",
       icon_size = 64,
       subgroup = prefix .. "protein",
       stack_size = 200
@@ -398,7 +398,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "milk-protein",
-      icon = icons .. "Milchprotein.png",
+      icon = icons .. "milchprotein.png",
       icon_size = 64,
       subgroup = prefix .. "protein",
       stack_size = 200
@@ -406,7 +406,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "plant-protein",
-      icon = icons .. "Pflanzenprotein.png",
+      icon = icons .. "pflanzenprotein.png",
       icon_size = 64,
       subgroup = prefix .. "protein",
       stack_size = 200
@@ -419,7 +419,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "milk",
-      icon = icons .. "Milch.png",
+      icon = icons .. "milch.png",
       icon_size = 64,
       subgroup = prefix .. "sugar",
       stack_size = 200
@@ -463,7 +463,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "lactose",
-      icon = icons .. "Lactose.png",
+      icon = icons .. "lactose.png",
       icon_size = 64,
       subgroup = prefix .. "sugar",
       stack_size = 200
@@ -471,7 +471,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "galactose",
-      icon = icons .. "Galactose.png",
+      icon = icons .. "galactose.png",
       icon_size = 64,
       subgroup = prefix .. "sugar",
       stack_size = 200
@@ -548,7 +548,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "phosphoenolpyruvate",
-      icon = icons .. "Phosphophenolpyruvat.png",
+      icon = icons .. "phosphophenolpyruvat.png",
       icon_size = 64,
       subgroup = prefix .. "glycolyse",
       stack_size = 200
@@ -588,7 +588,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "glactose",
-      icon = icons .. "Galactose.png",
+      icon = icons .. "galactose.png",
       icon_size = 64,
       subgroup = prefix .. "lactose-reduction",
       stack_size = 200
@@ -601,7 +601,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "hydroxyethyl-tpp",
-      icon = icons .. "Hydroxyethyl-TPP.png",
+      icon = icons .. "hydroxyethyl-tpp.png",
       icon_size = 64,
       subgroup = prefix .. "pyruvate-reduction",
       stack_size = 200
@@ -609,7 +609,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "liponamid",
-      icon = icons .. "Liponamid.png",
+      icon = icons .. "liponamid.png",
       icon_size = 64,
       subgroup = prefix .. "pyruvate-reduction",
       stack_size = 200
@@ -617,7 +617,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "acetylliponamid",
-      icon = icons .. "Acetylliponamid.png",
+      icon = icons .. "acetylliponamid.png",
       icon_size = 64,
       subgroup = prefix .. "pyruvate-reduction",
       stack_size = 200
@@ -625,7 +625,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "dihydroliponamid",
-      icon = icons .. "Dihydroliponamid.png",
+      icon = icons .. "dihydroliponamid.png",
       icon_size = 64,
       subgroup = prefix .. "pyruvate-reduction",
       stack_size = 200
@@ -637,7 +637,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "glycerol",
-      icon = icons .. "Glycerin.png",
+      icon = icons .. "glycerin.png",
       icon_size = 64,
       subgroup = prefix .. "lipolysis",
       stack_size = 200
@@ -645,7 +645,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "fatty-acid-c18",
-      icon = icons .. "C18-FS.png",
+      icon = icons .. "c18-fs.png",
       icon_size = 64,
       subgroup = prefix .. "lipolysis",
       stack_size = 200
@@ -653,7 +653,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "l-glycerol-3-phosphate",
-      icon = icons .. "Glycerin-3-Phosphat.png",
+      icon = icons .. "glycerin-3-phosphat.png",
       icon_size = 64,
       subgroup = prefix .. "lipolysis",
       stack_size = 200
@@ -661,7 +661,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "acyl-amp-c18",
-      icon = icons .. "C18-Acyl-AMP.png",
+      icon = icons .. "c18-acyl-amp.png",
       icon_size = 64,
       subgroup = prefix .. "lipolysis",
       stack_size = 200
@@ -669,7 +669,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "fatty-acid-c4",
-      icon = icons .. "C18-FS.png",
+      icon = icons .. "c18-fs.png",
       icon_size = 64,
       subgroup = prefix .. "lipolysis",
       stack_size = 200
@@ -677,7 +677,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "acyl-amp-c4",
-      icon = icons .. "C18-Acyl-AMP.png",
+      icon = icons .. "c18-acyl-amp.png",
       icon_size = 64,
       subgroup = prefix .. "lipolysis",
       stack_size = 200
@@ -689,7 +689,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "acetyl-coa",
-      icon = icons .. "Acetyl-CoA.png",
+      icon = icons .. "acetyl-coa.png",
       icon_size = 64,
       subgroup = prefix .. "beta-oxidation",
       stack_size = 200
@@ -702,7 +702,7 @@ for i = 18, 4, -2 do
       {
         type = "item",
         name = prefix .. "acyl-coa-c" .. i,
-        icon = icons .. "C" .. i .. "-CoA.png",
+        icon = icons .. "c" .. i .. "-coa.png",
         icon_size = 64,
         subgroup = prefix .. "beta-oxidation",
         stack_size = 200
@@ -710,7 +710,7 @@ for i = 18, 4, -2 do
       {
         type = "item",
         name = prefix .. "enoyl-coa-c" .. i,
-        icon = icons .. "C" .. i .. "-Enoyl.png",
+        icon = icons .. "c" .. i .. "-enoyl.png",
         icon_size = 64,
         subgroup = prefix .. "beta-oxidation",
         stack_size = 200
@@ -718,7 +718,7 @@ for i = 18, 4, -2 do
       {
         type = "item",
         name = prefix .. "l-3-hydroxyacyl-coa-c" .. i,
-        icon = icons .. "C" .. i .. "-Hydroxyacyl-CoA.png",
+        icon = icons .. "c" .. i .. "-hydroxyacyl-coa.png",
         icon_size = 64,
         subgroup = prefix .. "beta-oxidation",
         stack_size = 200
@@ -726,7 +726,7 @@ for i = 18, 4, -2 do
       {
         type = "item",
         name = prefix .. "3-ketoacyl-coa-c" .. i,
-        icon = icons .. "C" .. i .. "-Ketoacyl-CoA.png",
+        icon = icons .. "c" .. i .. "-ketoacyl-coa.png",
         icon_size = 64,
         subgroup = prefix .. "beta-oxidation",
         stack_size = 200
@@ -739,7 +739,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "glutamate",
-      icon = icons .. "Glutamat.png",
+      icon = icons .. "glutamat.png",
       icon_size = 64,
       subgroup = prefix .. "amino-acid",
       stack_size = 200
@@ -747,7 +747,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "glutamine",
-      icon = icons .. "Glutamin.png",
+      icon = icons .. "glutamin.png",
       icon_size = 64,
       subgroup = prefix .. "amino-acid",
       stack_size = 200
@@ -755,7 +755,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "aspartate",
-      icon = icons .. "Aspartat.png",
+      icon = icons .. "aspartat.png",
       icon_size = 64,
       subgroup = prefix .. "amino-acid",
       stack_size = 200
@@ -763,7 +763,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "alanine",
-      icon = icons .. "Alanin.png",
+      icon = icons .. "alanin.png",
       icon_size = 64,
       subgroup = prefix .. "amino-acid",
       stack_size = 200
@@ -771,7 +771,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "arginine",
-      icon = icons .. "Arginin.png",
+      icon = icons .. "arginin.png",
       icon_size = 64,
       subgroup = prefix .. "amino-acid",
       stack_size = 200
@@ -779,7 +779,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "imino-acid-glutamine",
-      icon = icons .. "Imino-Zwischenprodukt.png",
+      icon = icons .. "imino-zwischenprodukt.png",
       icon_size = 64,
       subgroup = prefix .. "amino-acid",
       stack_size = 200
@@ -787,7 +787,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "cysteine",
-      icon = icons .. "Cystein.png",
+      icon = icons .. "cystein.png",
       icon_size = 64,
       subgroup = prefix .. "amino-acid",
       stack_size = 200
@@ -800,7 +800,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "glutamine",
-      icon = icons .. "Glutamin.png",
+      icon = icons .. "glutamin.png",
       icon_size = 64,
       subgroup = prefix .. "amino-acid",
       stack_size = 200
@@ -808,7 +808,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "aspartate",
-      icon = icons .. "Aspartat.png",
+      icon = icons .. "aspartat.png",
       icon_size = 64,
       subgroup = prefix .. "amino-acid",
       stack_size = 200
@@ -816,7 +816,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "alanine",
-      icon = icons .. "Alanin.png",
+      icon = icons .. "alanin.png",
       icon_size = 64,
       subgroup = prefix .. "amino-acid",
       stack_size = 200
@@ -824,7 +824,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "arginine",
-      icon = icons .. "Arginin.png",
+      icon = icons .. "arginin.png",
       icon_size = 64,
       subgroup = prefix .. "amino-acid",
       stack_size = 200
@@ -832,7 +832,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "imino-acid-glutamine",
-      icon = icons .. "Imino-Zwischenprodukt.png",
+      icon = icons .. "imino-zwischenprodukt.png",
       icon_size = 64,
       subgroup = prefix .. "amino-acid",
       stack_size = 200
@@ -844,7 +844,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "carbamoyl-phosphate",
-      icon = icons .. "Carbamylphosphat.png",
+      icon = icons .. "carbamylphosphat.png",
       icon_size = 64,
       subgroup = prefix .. "urea-cycle",
       stack_size = 200
@@ -852,7 +852,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "ornithine",
-      icon = icons .. "Ornithin.png",
+      icon = icons .. "ornithin.png",
       icon_size = 64,
       subgroup = prefix .. "urea-cycle",
       stack_size = 200
@@ -860,7 +860,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "citrulline",
-      icon = icons .. "Citrullin.png",
+      icon = icons .. "citrullin.png",
       icon_size = 64,
       subgroup = prefix .. "urea-cycle",
       stack_size = 200
@@ -868,7 +868,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "argininosuccinic-acid",
-      icon = icons .. "Argininosuccinat.png",
+      icon = icons .. "argininosuccinat.png",
       icon_size = 64,
       subgroup = prefix .. "urea-cycle",
       stack_size = 200
@@ -876,7 +876,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "urea",
-      icon = icons .. "Harnstoff.png",
+      icon = icons .. "harnstoff.png",
       icon_size = 64,
       subgroup = prefix .. "urea-cycle",
       stack_size = 200
@@ -888,7 +888,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "alpha-ketoglutarate",
-      icon = icons .. "Alpha-Ketogluterat.png",
+      icon = icons .. "alpha-ketogluterat.png",
       icon_size = 64,
       subgroup = prefix .. "citrate-cycle",
       stack_size = 200
@@ -896,7 +896,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "oxaloacetate",
-      icon = icons .. "Oxalacetat.png",
+      icon = icons .. "oxalacetat.png",
       icon_size = 64,
       subgroup = prefix .. "citrate-cycle",
       stack_size = 200
@@ -904,7 +904,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "citryl-coa",
-      icon = icons .. "Citryl-CoA.png",
+      icon = icons .. "citryl-coa.png",
       icon_size = 64,
       subgroup = prefix .. "citrate-cycle",
       stack_size = 200
@@ -912,7 +912,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "citrate",
-      icon = icons .. "Citrat.png",
+      icon = icons .. "citrat.png",
       icon_size = 64,
       subgroup = prefix .. "citrate-cycle",
       stack_size = 200
@@ -920,7 +920,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "isocitrate",
-      icon = icons .. "Isocitrat.png",
+      icon = icons .. "isocitrat.png",
       icon_size = 64,
       subgroup = prefix .. "citrate-cycle",
       stack_size = 200
@@ -928,7 +928,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "oxalosuccinate",
-      icon = icons .. "Oxalsuccinat.png",
+      icon = icons .. "oxalsuccinat.png",
       icon_size = 64,
       subgroup = prefix .. "citrate-cycle",
       stack_size = 200
@@ -936,7 +936,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "succinyl-coa",
-      icon = icons .. "Succinyl-CoA.png",
+      icon = icons .. "succinyl-coa.png",
       icon_size = 64,
       subgroup = prefix .. "citrate-cycle",
       stack_size = 200
@@ -944,7 +944,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "succinate",
-      icon = icons .. "Succinat.png",
+      icon = icons .. "succinat.png",
       icon_size = 64,
       subgroup = prefix .. "citrate-cycle",
       stack_size = 200
@@ -952,7 +952,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "fumarate",
-      icon = icons .. "Fumarat.png",
+      icon = icons .. "fumarat.png",
       icon_size = 64,
       subgroup = prefix .. "citrate-cycle",
       stack_size = 200
@@ -960,7 +960,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "malate",
-      icon = icons .. "Malat.png",
+      icon = icons .. "malat.png",
       icon_size = 64,
       subgroup = prefix .. "citrate-cycle",
       stack_size = 200
@@ -968,7 +968,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "fadh2-2e-",
-      icon = icons .. "FADH2_e.png",
+      icon = icons .. "fadh2_e.png",
       icon_size = 64,
       subgroup = prefix .. "citrate-cycle",
       stack_size = 200
@@ -980,7 +980,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "4-phosphopantothenate",
-      icon = icons .. "Phosphopantothenat.png",
+      icon = icons .. "phosphopantothenat.png",
       icon_size = 64,
       subgroup = prefix .. "coa-synthesis",
       stack_size = 200
@@ -988,7 +988,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "4-phosphopantothenoyl-l-cysteine",
-      icon = icons .. "Pantothenoylcystein.png",
+      icon = icons .. "pantothenoylcystein.png",
       icon_size = 64,
       subgroup = prefix .. "coa-synthesis",
       stack_size = 200
@@ -996,7 +996,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "4-phosphopantethein",
-      icon = icons .. "Phosphopantethein.png",
+      icon = icons .. "phosphopantethein.png",
       icon_size = 64,
       subgroup = prefix .. "coa-synthesis",
       stack_size = 200
@@ -1004,7 +1004,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "dephospho-coa",
-      icon = icons .. "Desphospho-CoA.png",
+      icon = icons .. "desphospho-coa.png",
       icon_size = 64,
       subgroup = prefix .. "coa-synthesis",
       stack_size = 200
@@ -1012,7 +1012,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "coa",
-      icon = icons .. "CoA.png",
+      icon = icons .. "coa.png",
       icon_size = 64,
       subgroup = prefix .. "coa-synthesis",
       stack_size = 200
@@ -1032,7 +1032,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "ubiquinol",
-      icon = icons .. "Ubichinol.png",
+      icon = icons .. "ubichinol.png",
       icon_size = 64,
       subgroup = prefix .. "respiration",
       stack_size = 200
@@ -1040,7 +1040,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "semiquinone",
-      icon = icons .. "Semichinon.png",
+      icon = icons .. "semichinon.png",
       icon_size = 64,
       subgroup = prefix .. "respiration",
       stack_size = 200
@@ -1048,7 +1048,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "permit-ubiquinone",
-      icon = icons .. "Passierschein.png",
+      icon = icons .. "passierschein.png",
       icon_size = 64,
       subgroup = prefix .. "respiration",
       stack_size = 200
@@ -1056,7 +1056,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "fe-o-o-cu",
-      icon = icons .. "Feoocu.png",
+      icon = icons .. "feoocu.png",
       icon_size = 64,
       subgroup = prefix .. "respiration",
       stack_size = 200
@@ -1064,7 +1064,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "cyt-c",
-      icon = icons .. "Cyt-c.png",
+      icon = icons .. "cyt-c.png",
       icon_size = 64,
       subgroup = prefix .. "respiration",
       stack_size = 200
@@ -1072,7 +1072,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "cyt-c-e-",
-      icon = icons .. "Cyt-c_e.png",
+      icon = icons .. "cyt-c_e.png",
       icon_size = 64,
       subgroup = prefix .. "respiration",
       stack_size = 200
@@ -1080,7 +1080,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "h+-imr",
-      icon = icons .. "H_IMR.png",
+      icon = icons .. "h_imr.png",
       icon_size = 64,
       subgroup = prefix .. "respiration",
       stack_size = 200
@@ -1093,7 +1093,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "coenzyme-q",
-      icon = icons .. "Coenzym-Q.png",
+      icon = icons .. "coenzym-q.png",
       icon_size = 64,
       stack_size = 200
     },

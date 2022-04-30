@@ -25,7 +25,7 @@ local plantWalkingSound =
   }
 }
 
-local plantMinigSound = 
+local plantMiningSound =
 {
   {
     filename = "__base__/sound/particles/tree-leaves-1.ogg",
@@ -45,17 +45,17 @@ local plantMinigSound =
 local resource = {
   type = "resource",
   name = prefix .. "sunflower",
-  icon = "__bio-chemistry__/graphics/icons/Sonnenblumenfeld.png",
+  icon = "__bio-chemistry__/graphics/icons/sonnenblumenfeld.png",
   icon_size = 64,
 
   collision_box = {{ -0.1, -0.1}, {0.1, 0.1}}, -- value taken from base mod
   selection_box = {{ -0.5, -0.5}, {0.5, 0.5}}, -- full tile
   flags = {"placeable-neutral"},
 
-  minable = 
+  minable =
   {
     mining_time = 2,
-    mining_particle = "green-asterisk-vegetation-particle-small-medium", 
+    mining_particle = "green-asterisk-vegetation-particle-small-medium",
     results =
     {
       {
@@ -68,7 +68,7 @@ local resource = {
 
   subgroup = prefix .. "resource",
   remove_decoratives = true,
-  mining_sound = plantMinigSound,
+  mining_sound = plantMiningSound,
 
 
   autoplace =
@@ -98,15 +98,15 @@ local resource = {
   {
     sheet =
     {
-      filename = "__bio-chemistry__/graphics/entity/Sonnenblumenfeld.png",
+      filename = "__bio-chemistry__/graphics/entity/sonnenblumenfeld.png",
       priority = "extra-high",
       width = 64,
       height = 64,
       frame_count = 8,
       variation_count = 1,
-      hr_version = 
+      hr_version =
       {
-        filename = "__bio-chemistry__/graphics/entity/hr-Sonnenblumenfeld.png",
+        filename = "__bio-chemistry__/graphics/entity/hr-sonnenblumenfeld.png",
         priority = "extra-high",
         width = 128,
         height = 128,
@@ -116,9 +116,9 @@ local resource = {
       }
     }
   },
-  
+
   walking_sound = plantWalkingSound,
-  
+
   tree_removal_probability = 1,
   tree_removal_max_distance = 32 * 320,
 }
@@ -152,17 +152,17 @@ data:extend(
 local resource = {
   type = "resource",
   name = prefix .. "sugar",
-  icon = "__bio-chemistry__/graphics/icons/Zuckerrohrfeld.png",
+  icon = "__bio-chemistry__/graphics/icons/zuckerrohrfeld.png",
   icon_size = 64,
 
   collision_box = {{ -0.1, -0.1}, {0.1, 0.1}}, -- value taken from base mod
   selection_box = {{ -0.5, -0.5}, {0.5, 0.5}}, -- full tile
   flags = {"placeable-neutral"},
 
-  minable = 
+  minable =
   {
     mining_time = 2,
-    mining_particle = "green-asterisk-vegetation-particle-small-medium", 
+    mining_particle = "green-asterisk-vegetation-particle-small-medium",
     results =
     {
       {
@@ -175,7 +175,7 @@ local resource = {
 
   subgroup = prefix .. "resource",
   remove_decoratives = true,
-  mining_sound = plantMinigSound,
+  mining_sound = plantMiningSound,
 
 
   autoplace =
@@ -205,15 +205,15 @@ local resource = {
   {
     sheet =
     {
-      filename = "__bio-chemistry__/graphics/entity/Zuckerrohrfeld.png",
+      filename = "__bio-chemistry__/graphics/entity/zuckerrohrfeld.png",
       priority = "extra-high",
       width = 64,
       height = 64,
       frame_count = 8,
       variation_count = 1,
-      hr_version = 
+      hr_version =
       {
-        filename = "__bio-chemistry__/graphics/entity/hr-Zuckerrohrfeld.png",
+        filename = "__bio-chemistry__/graphics/entity/hr-zuckerrohrfeld.png",
         priority = "extra-high",
         width = 128,
         height = 128,
@@ -223,9 +223,9 @@ local resource = {
       }
     }
   },
-  
+
   walking_sound = plantWalkingSound,
-  
+
   tree_removal_probability = 1,
   tree_removal_max_distance = 32 * 320,
 }
@@ -259,7 +259,7 @@ data:extend(
 local resource = {
   type = "resource",
   name = prefix .. "cows",
-  icon = "__bio-chemistry__/graphics/icons/Kuhe.png",
+  icon = "__bio-chemistry__/graphics/icons/kuhe.png",
   icon_size = 64,
 
   collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
@@ -267,10 +267,10 @@ local resource = {
   flags = {"placeable-neutral"},
   map_generator_bounding_box = {{ -0.49, -0.49}, {0.49, 0.49}},
   map_grid = false,
-  minable = 
+  minable =
   {
     mining_time = 2,
-    mining_particle = "blood-particle", 
+    mining_particle = "blood-particle",
     results =
     {
       {
@@ -289,7 +289,7 @@ local resource = {
 
   subgroup = prefix .. "resource",
   remove_decoratives = true,
-  mining_sound = 
+  mining_sound =
   {
     {
       filename = "__base__/sound/particles/small-splash-4.ogg"
@@ -298,7 +298,7 @@ local resource = {
       filename = "__base__/sound/particles/small-splash-5.ogg"
     }
   },
-  
+
   autoplace =
   {
     control = prefix .. "cows",
@@ -326,7 +326,7 @@ local resource = {
   {
     sheet =
     {
-      filename = "__bio-chemistry__/graphics/entity/Kuhe.png",
+      filename = "__bio-chemistry__/graphics/entity/kuhe.png",
       priority = "extra-high",
       width = 64,
       height = 64,
@@ -334,7 +334,7 @@ local resource = {
       variation_count = 4,
       hr_version =
       {
-        filename = "__bio-chemistry__/graphics/entity/hr-Kuhe.png",
+        filename = "__bio-chemistry__/graphics/entity/hr-kuhe.png",
         priority = "extra-high",
         width = 128,
         height = 128,

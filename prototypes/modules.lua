@@ -28,7 +28,7 @@ data:extend(
     {
       type = "module",
       name = prefix .. "fe:s-cluster-a-module",
-      icon = icons .. "Cluster_A.png",
+      icon = icons .. "cluster_a.png",
       icon_size = 64,
       subgroup = prefix .. "modules",
       stack_size = 50,
@@ -45,7 +45,7 @@ data:extend(
     {
       type = "module",
       name = prefix .. "fe:s-cluster-b-module",
-      icon = icons .. "Cluster_B.png",
+      icon = icons .. "cluster_b.png",
       icon_size = 64,
       subgroup = prefix .. "modules",
       stack_size = 50,
@@ -62,7 +62,7 @@ data:extend(
     {
       type = "module",
       name = prefix .. "fe:s-cluster-c-module",
-      icon = icons .. "Cluster_C.png",
+      icon = icons .. "cluster_c.png",
       icon_size = 64,
       subgroup = prefix .. "modules",
       stack_size = 50,
@@ -79,7 +79,7 @@ data:extend(
     {
       type = "module",
       name = prefix .. "cub-module",
-      icon = icons .. "CuB.png",
+      icon = icons .. "cub.png",
       icon_size = 64,
       subgroup = prefix .. "modules",
       stack_size = 50,
@@ -94,7 +94,7 @@ data:extend(
     {
       type = "module",
       name = prefix .. "heme-a3-module",
-      icon = icons .. "HaemA3.png",
+      icon = icons .. "haema3.png",
       icon_size = 64,
       subgroup = prefix .. "modules",
       stack_size = 50,
@@ -108,7 +108,7 @@ data:extend(
     },{
       type = "module",
       name = prefix .. "ubichinon-module",
-      icon = icons .. "Ubichinon_Modul.png",
+      icon = icons .. "ubichinon_modul.png",
       icon_size = 64,
       subgroup = prefix .. "modules",
       stack_size = 50,

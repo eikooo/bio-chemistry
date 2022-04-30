@@ -106,7 +106,7 @@ data:extend(
       category = "crafting",
       energy_required = 15,
       subgroup = prefix .. "amino-acid",
-      icon = icons .. "Glutamat.png",
+      icon = icons .. "glutamat.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "meat-protein", amount = 1}
@@ -123,7 +123,7 @@ data:extend(
       category = "crafting",
       energy_required = 15,
       subgroup = prefix .. "amino-acid",
-      icon = icons .. "Arginin.png",
+      icon = icons .. "arginin.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "milk-protein", amount = 1}
@@ -140,7 +140,7 @@ data:extend(
       category = "crafting",
       energy_required = 15,
       subgroup = prefix .. "amino-acid",
-      icon = icons .. "Cystein.png",
+      icon = icons .. "cystein.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "plant-protein", amount = 1}
@@ -157,7 +157,7 @@ data:extend(
       category = "advanced-crafting",
       energy_required = 15,
       subgroup = prefix .. "waste",
-      icon = icons .. "Dreckwasser.png",
+      icon = icons .. "dreckwasser.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "waste", amount = 1},
@@ -415,7 +415,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "lactose-reduction",
       energy_required = 5,
-      icon = icons .. "Galactose.png",
+      icon = icons .. "galactose.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "lactose", amount = 1}
@@ -437,7 +437,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "pyruvate-reduction",
       energy_required = 5,
-      icon = icons .. "Hydroxyethyl-TPP.png",
+      icon = icons .. "hydroxyethyl-tpp.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "pyruvate", amount = 1},
@@ -455,7 +455,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "pyruvate-reduction",
       energy_required = 5,
-      icon = icons .. "Acetylliponamid.png",
+      icon = icons .. "acetylliponamid.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "hydroxyethyl-tpp", amount = 1},
@@ -472,7 +472,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "pyruvate-reduction",
       energy_required = 5,
-      icon = icons .. "Acetyl-CoA.png",
+      icon = icons .. "acetyl-coa.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "acetylliponamid", amount = 1},
@@ -490,7 +490,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "pyruvate-reduction",
       energy_required = 5,
-      icon = icons .. "Liponamid.png",
+      icon = icons .. "liponamid.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "dihydroliponamid", amount = 1},
@@ -508,7 +508,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "pyruvate-reduction",
       energy_required = 5,
-      icon = icons .. "FAD.png",
+      icon = icons .. "fad.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "fadh2", amount = 1},
@@ -531,7 +531,7 @@ data:extend(
       category = "advanced-crafting",
       subgroup = prefix .. "lipolysis",
       energy_required = 5,
-      icon = icons .. "Glycerin.png",
+      icon = icons .. "glycerin.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "sunflower-oil-c18", amount = 1},
@@ -550,7 +550,7 @@ data:extend(
       category = "advanced-crafting",
       subgroup = prefix .. "lipolysis",
       energy_required = 5,
-      icon = icons .. "Glycerin.png",
+      icon = icons .. "glycerin.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "c4-butter", amount = 1},
@@ -569,7 +569,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "lipolysis",
       energy_required = 5,
-      icon = icons .. "Glycerin-3-Phosphat.png",
+      icon = icons .. "glycerin-3-phosphat.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "glycerol", amount = 1},
@@ -607,7 +607,7 @@ data:extend(
       category = "advanced-crafting",
       subgroup = prefix .. "lipolysis",
       energy_required = 5,
-      icon = icons .. "C18-Acyl-AMP.png",
+      icon = icons .. "c18-acyl-amp.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "fatty-acid-c18", amount = 1},
@@ -625,7 +625,7 @@ data:extend(
       category = "advanced-crafting",
       subgroup = prefix .. "lipolysis",
       energy_required = 5,
-      icon = icons .. "C18-CoA.png",
+      icon = icons .. "c18-coa.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "acyl-amp-c18", amount = 1},
@@ -643,7 +643,7 @@ data:extend(
       category = "advanced-crafting",
       subgroup = prefix .. "lipolysis",
       energy_required = 5,
-      icon = icons .. "C18-Acyl-AMP.png",
+      icon = icons .. "c18-acyl-amp.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "fatty-acid-c4", amount = 1},
@@ -661,7 +661,7 @@ data:extend(
       category = "advanced-crafting",
       subgroup = prefix .. "lipolysis",
       energy_required = 5,
-      icon = icons .. "C4-CoA.png",
+      icon = icons .. "c4-coa.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "acyl-amp-c4", amount = 1},
@@ -684,7 +684,7 @@ for i = 18, 4, -2 do
         category = "crafting",
         subgroup = prefix .. "lipolysis",
         energy_required = 5,
-        icon = icons .. "C" .. i .. "-Enoyl.png",
+        icon = icons .. "c" .. i .. "-enoyl.png",
         icon_size = 64,
         ingredients = {
           {type = "item", name = prefix .. "acyl-coa-c" .. i, amount = 1},
@@ -702,7 +702,7 @@ for i = 18, 4, -2 do
         category = "advanced-crafting",
         subgroup = prefix .. "lipolysis",
         energy_required = 5,
-        icon = icons .. "C" .. i .. "-Hydroxyacyl-CoA.png",
+        icon = icons .. "c" .. i .. "-hydroxyacyl-coa.png",
         icon_size = 64,
         ingredients = {
           {type = "item", name = prefix .. "enoyl-coa-c" .. i, amount = 1},
@@ -719,7 +719,7 @@ for i = 18, 4, -2 do
         category = "crafting",
         subgroup = prefix .. "lipolysis",
         energy_required = 5,
-        icon = icons .. "C" .. i .. "-Ketoacyl-CoA.png",
+        icon = icons .. "c" .. i .. "-ketoacyl-coa.png",
         icon_size = 64,
         ingredients = {
           {type = "item", name = prefix .. "l-3-hydroxyacyl-coa-c" .. i, amount = 1},
@@ -744,7 +744,7 @@ for i = 18, 6, -2 do
         category = "crafting",
         subgroup = prefix .. "lipolysis",
         energy_required = 5,
-        icon = icons .. "C" .. (i - 2) .. "-CoA.png",
+        icon = icons .. "c" .. (i - 2) .. "-coa.png",
         icon_size = 64,
         ingredients = {
           {type = "item", name = prefix .. "3-ketoacyl-coa-c" .. i, amount = 1},
@@ -767,7 +767,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "lipolysis",
       energy_required = 5,
-      icon = icons .. "Acetyl-CoA.png",
+      icon = icons .. "acetyl-coa.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "3-ketoacyl-coa-c4", amount = 1},
@@ -788,7 +788,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "amino-acid",
       energy_required = 5,
-      icon = icons .. "Imino-Zwischenprodukt.png",
+      icon = icons .. "imino-zwischenprodukt.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "glutamate", amount = 1},
@@ -807,7 +807,7 @@ data:extend(
       category = "advanced-crafting",
       subgroup = prefix .. "amino-acid",
       energy_required = 5,
-      icon = icons .. "Alpha-Ketogluterat.png",
+      icon = icons .. "alpha-ketogluterat.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "imino-acid-glutamine", amount = 1},
@@ -825,7 +825,7 @@ data:extend(
       category = "advanced-crafting",
       subgroup = prefix .. "amino-acid",
       energy_required = 5,
-      icon = icons .. "Glutamin.png",
+      icon = icons .. "glutamin.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "glutamate", amount = 1},
@@ -846,7 +846,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "amino-acid",
       energy_required = 5,
-      icon = icons .. "Oxalacetat.png",
+      icon = icons .. "oxalacetat.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "aspartate", amount = 1},
@@ -887,7 +887,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "citrate-cycle",
       energy_required = 5,
-      icon = icons .. "Citryl-CoA.png",
+      icon = icons .. "citryl-coa.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "oxaloacetate", amount = 1},
@@ -904,7 +904,7 @@ data:extend(
       category = "advanced-crafting",
       subgroup = prefix .. "citrate-cycle",
       energy_required = 5,
-      icon = icons .. "Citrat.png",
+      icon = icons .. "citrat.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "citryl-coa", amount = 1},
@@ -922,7 +922,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "citrate-cycle",
       energy_required = 5,
-      icon = icons .. "Isocitrat.png",
+      icon = icons .. "isocitrat.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "citrate", amount = 1}
@@ -938,7 +938,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "citrate-cycle",
       energy_required = 5,
-      icon = icons .. "Oxalsuccinat.png",
+      icon = icons .. "oxalsuccinat.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "isocitrate", amount = 1},
@@ -957,7 +957,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "citrate-cycle",
       energy_required = 5,
-      icon = icons .. "Alpha-Ketogluterat.png",
+      icon = icons .. "alpha-ketogluterat.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "oxalosuccinate", amount = 1},
@@ -975,7 +975,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "citrate-cycle",
       energy_required = 5,
-      icon = icons .. "Succinyl-CoA.png",
+      icon = icons .. "succinyl-coa.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "alpha-ketoglutarate", amount = 1},
@@ -995,7 +995,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "citrate-cycle",
       energy_required = 5,
-      icon = icons .. "Succinat.png",
+      icon = icons .. "succinat.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "succinyl-coa", amount = 1},
@@ -1015,7 +1015,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "citrate-cycle",
       energy_required = 5,
-      icon = icons .. "Fumarat.png",
+      icon = icons .. "fumarat.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "succinate", amount = 1},
@@ -1033,7 +1033,7 @@ data:extend(
       category = "advanced-crafting",
       subgroup = prefix .. "citrate-cycle",
       energy_required = 5,
-      icon = icons .. "Malat.png",
+      icon = icons .. "malat.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "fumarate", amount = 1},
@@ -1050,7 +1050,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "citrate-cycle",
       energy_required = 5,
-      icon = icons .. "Oxalacetat.png",
+      icon = icons .. "oxalacetat.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "malate", amount = 1},
@@ -1073,7 +1073,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "coa-synthesis",
       energy_required = 5,
-      icon = icons .. "Phosphopantothenat.png",
+      icon = icons .. "phosphopantothenat.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "vitamin-b5", amount = 1},
@@ -1091,7 +1091,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "coa-synthesis",
       energy_required = 5,
-      icon = icons .. "Pantothenoylcystein.png",
+      icon = icons .. "pantothenoylcystein.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "4-phosphopantothenate", amount = 1},
@@ -1111,7 +1111,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "coa-synthesis",
       energy_required = 5,
-      icon = icons .. "Phosphopantethein.png",
+      icon = icons .. "phosphopantethein.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "4-phosphopantothenoyl-l-cysteine", amount = 1}
@@ -1127,7 +1127,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "coa-synthesis",
       energy_required = 5,
-      icon = icons .. "Desphospho-CoA.png",
+      icon = icons .. "desphospho-coa.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "4-phosphopantethein", amount = 1},
@@ -1145,7 +1145,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "coa-synthesis",
       energy_required = 5,
-      icon = icons .. "CoA.png",
+      icon = icons .. "coa.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "dephospho-coa", amount = 1},
@@ -1167,7 +1167,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "urea-cycle",
       energy_required = 5,
-      icon = icons .. "Carbamylphosphat.png",
+      icon = icons .. "carbamylphosphat.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "nh4+", amount = 1},
@@ -1187,7 +1187,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "urea-cycle",
       energy_required = 5,
-      icon = icons .. "Citrullin.png",
+      icon = icons .. "citrullin.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "carbamoyl-phosphate", amount = 1},
@@ -1205,7 +1205,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "urea-cycle",
       energy_required = 5,
-      icon = icons .. "Argininosuccinat.png",
+      icon = icons .. "argininosuccinat.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "citrulline", amount = 1},
@@ -1225,7 +1225,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "urea-cycle",
       energy_required = 5,
-      icon = icons .. "Arginin.png",
+      icon = icons .. "arginin.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "argininosuccinic-acid", amount = 1}
@@ -1242,7 +1242,7 @@ data:extend(
       category = "advanced-crafting",
       subgroup = prefix .. "urea-cycle",
       energy_required = 5,
-      icon = icons .. "Ornithin.png",
+      icon = icons .. "ornithin.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "arginine", amount = 1},
@@ -1260,7 +1260,7 @@ data:extend(
       category = "advanced-crafting",
       subgroup = prefix .. "urea-cycle",
       energy_required = 5,
-      icon = icons .. "EinfacherUrin.png",
+      icon = icons .. "einfacherurin.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "urea", amount = 1},
@@ -1283,7 +1283,7 @@ data:extend(
       energy_required = 5 * specialModuleSpeedFactor,
       icon = icons .. "e.png",
       icon_size = 64,
-      
+
       ingredients = {
         {type = "item", name = prefix .. "nadh", amount = 1},
         {type = "item", name = prefix .. "h+", amount = 5},
@@ -1300,7 +1300,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "respiration",
       energy_required = 5 * specialModuleSpeedFactor * specialModuleSpeedFactor,
-      icon = icons .. "Ubichinol.png",
+      icon = icons .. "ubichinol.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "e-", amount = 2},
@@ -1316,7 +1316,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "respiration",
       energy_required = 5 * specialModuleSpeedFactor,
-      icon = icons .. "Semichinon.png",
+      icon = icons .. "semichinon.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "ubiquinol", amount = 1}
@@ -1333,7 +1333,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "respiration",
       energy_required = 5 * specialModuleSpeedFactor,
-      icon = icons .. "Passierschein.png",
+      icon = icons .. "passierschein.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "semiquinone", amount = 1},
@@ -1349,7 +1349,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "respiration",
       energy_required = 5 * specialModuleSpeedFactor * specialModuleSpeedFactor,
-      icon = icons .. "Feoocu.png",
+      icon = icons .. "feoocu.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "permit-ubiquinone", amount = 1},
@@ -1366,7 +1366,7 @@ data:extend(
       category = "advanced-crafting",
       subgroup = prefix .. "respiration",
       energy_required = 5,
-      icon = icons .. "H_IMR.png",
+      icon = icons .. "h_imr.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "fe-o-o-cu", amount = 1},
@@ -1401,7 +1401,7 @@ data:extend(
       category = "crafting",
       subgroup = prefix .. "respiration",
       energy_required = 5,
-      icon = icons .. "O2.png",
+      icon = icons .. "o2.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "co2", amount = 4},
