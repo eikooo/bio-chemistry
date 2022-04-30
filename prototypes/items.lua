@@ -56,7 +56,13 @@ data:extend(
       type = "item-subgroup",
       name = prefix .. "lactose-reduction",
       group = prefix .. "bio-chemistry",
-      order = "e-a"
+      order = "e-b"
+    },
+    {
+      type = "item-subgroup",
+      name = prefix .. "gluconeogenesis",
+      group = prefix .. "bio-chemistry",
+      order = "e-c"
     },
     {
       type = "item-subgroup",
@@ -369,6 +375,14 @@ data:extend(
     {
       type = "item",
       name = prefix .. "gtp",
+      icon = icons .. "atp.png",
+      icon_size = 64,
+      subgroup = prefix .. "energy",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "gdp",
       icon = icons .. "adp.png",
       icon_size = 64,
       subgroup = prefix .. "energy",
@@ -1094,6 +1108,12 @@ data:extend(
       type = "item",
       name = prefix .. "coenzyme-q",
       icon = icons .. "coenzym-q.png",
+      icon_size = 64,
+      stack_size = 200
+    },{
+      type = "item",
+      name = prefix .. "cream",
+      icon = icons .. "handcreme.png",
       icon_size = 64,
       stack_size = 200
     },

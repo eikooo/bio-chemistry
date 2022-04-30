@@ -19,7 +19,7 @@ data:extend(
         {type = "item", name = prefix .. "pi", amount = 1, probability = 0.10},
         {type = "item", name = prefix .. "nad+", amount = 1, probability = 0.10},
         {type = "item", name = prefix .. "atp", amount = 1, probability = 0.01},
-        {type = "item", name = prefix .. "plant-protein",amount = 1, probability = 0.25}
+        {type = "item", name = prefix .. "plant-protein", amount = 1, probability = 0.25}
       }
     },
     {
@@ -167,7 +167,46 @@ data:extend(
       results = {
         {type = "fluid", name = prefix .. "waste-water", amount = 1},
         {type = "item", name = prefix .. "hco3-", amount = 3},
-        {type = "item", name = prefix .. "liponamid", amount = 1,probability = 0.05}
+        {type = "item", name = prefix .. "liponamid", amount = 1, probability = 0.05}
+      }
+    },
+    {
+      name = prefix .. "create-blood",
+      type = "recipe",
+      category = "crafting",
+      energy_required = 5,
+      ingredients = {},
+      main_product = prefix .. "blood",
+      results = {
+        {type = "item", name = prefix .. "blood", amount = 5}
+      }
+    },
+    {
+      name = prefix .. "craft-cream",
+      type = "recipe",
+      category = "advanced-crafting",
+      energy_required = 5,
+      ingredients = {
+        {type = "item", name = prefix .. "glycerol", amount = 3},
+        {type = "item", name = prefix .. "urea", amount = 1},
+        {type = "fluid", name = "water", amount = 1}
+      },
+      main_product = prefix .. "cream",
+      results = {
+        {type = "item", name = prefix .. "cream", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "use-cream",
+      type = "recipe",
+      category = "crafting",
+      energy_required = 5,
+      ingredients = {
+        {type = "item", name = prefix .. "cream", amount = 1}
+      },
+      main_product = prefix .. "coenzyme-q",
+      results = {
+        {type = "item", name = prefix .. "coenzyme-q", amount = 1}
       }
     }
   }
@@ -428,7 +467,205 @@ data:extend(
     }
   }
 )
-
+data:extend(
+  {
+    {
+      name = prefix .. "triosephosphate-isomerase-rev",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "gluconeogenesis",
+      energy_required = 5,
+      icon = icons .. "triose-phosphat-isomerase_rev.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "gap", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "dhap", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "pyruvate-carboxylase",
+      type = "recipe",
+      category = "advanced-crafting",
+      subgroup = prefix .. "gluconeogenesis",
+      energy_required = 5,
+      icon = icons .. "pyruvat-carboxylase.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "pyruvate", amount = 1},
+        {type = "item", name = prefix .. "atp", amount = 1},
+        {type = "item", name = prefix .. "co2", amount = 1},
+        {type = "fluid", name = "water", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "oxaloacetate", amount = 1},
+        {type = "item", name = prefix .. "adp", amount = 1},
+        {type = "item", name = prefix .. "pi", amount = 1},
+        {type = "item", name = prefix .. "h+", amount = 2}
+      }
+    },
+    {
+      name = prefix .. "phosphoenolpyruvate-carboxykinase",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "gluconeogenesis",
+      energy_required = 5,
+      icon = icons .. "phosphoenolpyruvat-carboxykinase.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "oxaloacetate", amount = 1},
+        {type = "item", name = prefix .. "gtp", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "phosphoenolpyruvate", amount = 1},
+        {type = "item", name = prefix .. "co2", amount = 1},
+        {type = "item", name = prefix .. "gdp", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "enolase-rev",
+      type = "recipe",
+      category = "advanced-crafting",
+      subgroup = prefix .. "gluconeogenesis",
+      energy_required = 5,
+      icon = icons .. "enolase_rev.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "phosphoenolpyruvate", amount = 1},
+        {type = "fluid", name = "water", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "2-phosphoglycerate", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "phosphoglycerate-mutase-rev",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "gluconeogenesis",
+      energy_required = 5,
+      icon = icons .. "phosphoglyceratmutase_rev.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "2-phosphoglycerate", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "3-phosphoglycerate", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "phosphoglycerate-kinase-rev",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "gluconeogenesis",
+      energy_required = 5,
+      icon = icons .. "phosphoglyceratkinase_rev.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "3-phosphoglycerate", amount = 1},
+        {type = "item", name = prefix .. "atp", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "1,3-biphosphoglycerate", amount = 1},
+        {type = "item", name = prefix .. "adp", amount = 1},
+        {type = "item", name = prefix .. "pi", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "glycerinaldehyd-3-phosphate-dehydrogenase-rev",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "gluconeogenesis",
+      energy_required = 5,
+      icon = icons .. "gap-dehydrogenase_rev.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "1,3-biphosphoglycerate", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "gap", amount = 1},
+        {type = "item", name = prefix .. "pi", amount = 1},
+        {type = "item", name = prefix .. "nad+", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "aldolase-rev",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "gluconeogenesis",
+      energy_required = 5,
+      icon = icons .. "aldolase_rev.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "gap", amount = 1},
+        {type = "item", name = prefix .. "dhap", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "fructose-1,6-biphosphate", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "fructose-1,6-bisphosphatase",
+      type = "recipe",
+      category = "advanced-crafting",
+      subgroup = prefix .. "gluconeogenesis",
+      energy_required = 5,
+      icon = icons .. "fructose-1-6-bisphosphatase.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "fructose-1,6-biphosphate", amount = 1},
+        {type = "fluid", name = "water", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "fructose-6-phosphate", amount = 1},
+        {type = "item", name = prefix .. "pi", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "glucose-6-phosphate-isomerase-rev",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "gluconeogenesis",
+      energy_required = 5,
+      icon = icons .. "glucose-6-phosphat-isomerase_rev.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "fructose-6-phosphate", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "glucose-6-phosphate", amount = 1}
+      }
+    },
+    {
+      name = prefix .. "glucose-6-phosphatase",
+      type = "recipe",
+      category = "crafting",
+      subgroup = prefix .. "gluconeogenesis",
+      energy_required = 5,
+      icon = icons .. "glucose-6-phosphatase.png",
+      icon_size = 64,
+      ingredients = {
+        {type = "item", name = prefix .. "glucose-6-phosphate", amount = 1}
+      },
+      main_product = "",
+      results = {
+        {type = "item", name = prefix .. "glucose", amount = 1},
+        {type = "item", name = prefix .. "pi", amount = 1}
+      }
+    }
+  }
+)
 data:extend(
   {
     {
@@ -1283,10 +1520,9 @@ data:extend(
       energy_required = 5 * specialModuleSpeedFactor,
       icon = icons .. "e.png",
       icon_size = 64,
-
       ingredients = {
         {type = "item", name = prefix .. "nadh", amount = 1},
-        {type = "item", name = prefix .. "h+", amount = 5},
+        {type = "item", name = prefix .. "h+", amount = 5}
       },
       main_product = "",
       results = {
@@ -1294,7 +1530,8 @@ data:extend(
         {type = "item", name = prefix .. "nad+", amount = 1},
         {type = "item", name = prefix .. "h+-imr", amount = 4}
       }
-    },{
+    },
+    {
       name = prefix .. "respiration-complex-ii",
       type = "recipe",
       category = "crafting",
@@ -1304,13 +1541,14 @@ data:extend(
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "e-", amount = 2},
-        {type = "item", name = prefix .. "fadh2-2e-", amount = 1},
+        {type = "item", name = prefix .. "fadh2-2e-", amount = 1}
       },
       main_product = "",
       results = {
-        {type = "item", name = prefix .. "ubiquinol", amount = 2},
+        {type = "item", name = prefix .. "ubiquinol", amount = 2}
       }
-    },{
+    },
+    {
       name = prefix .. "respiration-complex-iii-step1",
       type = "recipe",
       category = "crafting",
@@ -1327,7 +1565,8 @@ data:extend(
         {type = "item", name = prefix .. "cyt-c-e-", amount = 1},
         {type = "item", name = prefix .. "h+-imr", amount = 2}
       }
-    },{
+    },
+    {
       name = prefix .. "respiration-complex-iii-step2",
       type = "recipe",
       category = "crafting",
@@ -1337,13 +1576,14 @@ data:extend(
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "semiquinone", amount = 1},
-        {type = "item", name = prefix .. "h+", amount = 2},
+        {type = "item", name = prefix .. "h+", amount = 2}
       },
       main_product = "",
       results = {
         {type = "item", name = prefix .. "permit-ubiquinone", amount = 1}
       }
-    },{
+    },
+    {
       name = prefix .. "respiration-complex-iv-step1",
       type = "recipe",
       category = "crafting",
@@ -1354,13 +1594,14 @@ data:extend(
       ingredients = {
         {type = "item", name = prefix .. "permit-ubiquinone", amount = 1},
         {type = "item", name = prefix .. "cyt-c-e-", amount = 2},
-        {type = "item", name = prefix .. "o2", amount = 1},
+        {type = "item", name = prefix .. "o2", amount = 1}
       },
       main_product = "",
       results = {
-        {type = "item", name = prefix .. "fe-o-o-cu", amount = 2},
+        {type = "item", name = prefix .. "fe-o-o-cu", amount = 2}
       }
-    },{
+    },
+    {
       name = prefix .. "respiration-complex-iv-step2",
       type = "recipe",
       category = "advanced-crafting",
@@ -1371,14 +1612,15 @@ data:extend(
       ingredients = {
         {type = "item", name = prefix .. "fe-o-o-cu", amount = 1},
         {type = "item", name = prefix .. "cyt-c-e-", amount = 2},
-        {type = "item", name = prefix .. "h+", amount = 8},
+        {type = "item", name = prefix .. "h+", amount = 8}
       },
       main_product = "",
       results = {
         {type = "fluid", name = "water", amount = 2},
         {type = "item", name = prefix .. "h+-imr", amount = 4}
       }
-    },{
+    },
+    {
       name = prefix .. "atp-sythase",
       type = "recipe",
       category = "crafting",
@@ -1395,7 +1637,8 @@ data:extend(
       results = {
         {type = "item", name = prefix .. "atp", amount = 3}
       }
-    },{
+    },
+    {
       name = prefix .. "simple-gas-exchange",
       type = "recipe",
       category = "crafting",
@@ -1404,7 +1647,7 @@ data:extend(
       icon = icons .. "o2.png",
       icon_size = 64,
       ingredients = {
-        {type = "item", name = prefix .. "co2", amount = 4},
+        {type = "item", name = prefix .. "co2", amount = 4}
       },
       main_product = "",
       results = {
@@ -1424,7 +1667,7 @@ data:extend(
       ingredients = {
         {type = "item", name = "iron-plate", amount = 1},
         {type = "item", name = "sulfur", amount = 4},
-        {type = "item", name = prefix .. "cysteine", amount = 4},
+        {type = "item", name = prefix .. "cysteine", amount = 4}
       },
       result = prefix .. "fe:s-cluster-a-module"
     },
@@ -1436,7 +1679,7 @@ data:extend(
       ingredients = {
         {type = "item", name = "iron-plate", amount = 2},
         {type = "item", name = "sulfur", amount = 6},
-        {type = "item", name = prefix .. "cysteine", amount = 4},
+        {type = "item", name = prefix .. "cysteine", amount = 4}
       },
       result = prefix .. "fe:s-cluster-b-module"
     },
@@ -1448,7 +1691,7 @@ data:extend(
       ingredients = {
         {type = "item", name = "iron-plate", amount = 4},
         {type = "item", name = "sulfur", amount = 8},
-        {type = "item", name = prefix .. "cysteine", amount = 4},
+        {type = "item", name = prefix .. "cysteine", amount = 4}
       },
       result = prefix .. "fe:s-cluster-c-module"
     },
@@ -1459,7 +1702,7 @@ data:extend(
       subgroup = prefix .. "modules",
       ingredients = {
         {type = "item", name = "copper-plate", amount = 2},
-        {type = "item", name = "iron-gear-wheel", amount = 2},
+        {type = "item", name = "iron-gear-wheel", amount = 2}
       },
       result = prefix .. "cub-module"
     },
@@ -1470,7 +1713,7 @@ data:extend(
       subgroup = prefix .. "modules",
       ingredients = {
         {type = "item", name = prefix .. "blood", amount = 1},
-        {type = "item", name = "iron-plate", amount = 1},
+        {type = "item", name = "iron-plate", amount = 1}
       },
       result = prefix .. "heme-a3-module"
     },
@@ -1482,9 +1725,9 @@ data:extend(
       ingredients = {
         {type = "item", name = prefix .. "coenzyme-q", amount = 1},
         {type = "item", name = "iron-plate", amount = 1},
-        {type = "item", name = "copper-plate", amount = 1},
+        {type = "item", name = "copper-plate", amount = 1}
       },
       result = prefix .. "ubichinon-module"
-    },
+    }
   }
 )
