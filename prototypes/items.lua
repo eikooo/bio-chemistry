@@ -375,7 +375,7 @@ data:extend(
     {
       type = "item",
       name = prefix .. "gtp",
-      icon = icons .. "atp.png",
+      icon = icons .. "gtp.png",
       icon_size = 64,
       subgroup = prefix .. "energy",
       stack_size = 200
@@ -383,7 +383,15 @@ data:extend(
     {
       type = "item",
       name = prefix .. "gdp",
-      icon = icons .. "adp.png",
+      icon = icons .. "gdp.png",
+      icon_size = 64,
+      subgroup = prefix .. "energy",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "gmp",
+      icon = icons .. "gmp.png",
       icon_size = 64,
       subgroup = prefix .. "energy",
       stack_size = 200
@@ -446,7 +454,7 @@ data:extend(
       subgroup = prefix .. "sugar",
       stack_size = 200,
       fuel_category = "chemical",
-      fuel_value = "2MJ",
+      fuel_value = "2MJ"
     },
     {
       type = "item",
@@ -464,7 +472,7 @@ data:extend(
       subgroup = prefix .. "sugar",
       stack_size = 200,
       fuel_category = "chemical",
-      fuel_value = "6MJ",
+      fuel_value = "6MJ"
     },
     {
       type = "item",
@@ -1110,14 +1118,13 @@ data:extend(
       icon = icons .. "coenzym-q.png",
       icon_size = 64,
       stack_size = 200
-    },{
+    },
+    {
       type = "item",
       name = prefix .. "cream",
       icon = icons .. "handcreme.png",
       icon_size = 64,
       stack_size = 200
-    },
+    }
   }
 )
-
-
