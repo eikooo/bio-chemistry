@@ -78,6 +78,12 @@ data:extend(
     },
     {
       type = "item-subgroup",
+      name = prefix .. "lipolysis-glycerol",
+      group = prefix .. "bio-chemistry",
+      order = "ga"
+    },
+    {
+      type = "item-subgroup",
       name = prefix .. "beta-oxidation",
       group = prefix .. "bio-chemistry",
       order = "h"
@@ -138,6 +144,18 @@ data:extend(
     }
   }
 )
+for i = 4, 18, 2 do
+  data:extend(
+          {
+            {
+              type = "item-subgroup",
+              name = prefix .. "lipolysis-c".. i,
+              group = prefix .. "bio-chemistry",
+              order = "gc"..string.char(string.byte("a")+i-1)
+            },
+          }
+  )
+end
 data:extend(
   {
     {
@@ -605,19 +623,6 @@ data:extend(
     }
   }
 )
-data:extend(
-  {
-    {
-      type = "item",
-      name = prefix .. "glactose",
-      icon = icons .. "galactose.png",
-      icon_size = 64,
-      subgroup = prefix .. "lactose-reduction",
-      stack_size = 200
-    }
-  }
-)
-
 data:extend(
   {
     {
@@ -1103,6 +1108,38 @@ data:extend(
       type = "item",
       name = prefix .. "h+-imr",
       icon = icons .. "h_imr.png",
+      icon_size = 64,
+      subgroup = prefix .. "respiration",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "fe:s-cluster",
+      icon = icons .. "cluster_a.png",
+      icon_size = 64,
+      subgroup = prefix .. "respiration",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "cub",
+      icon = icons .. "cub.png",
+      icon_size = 64,
+      subgroup = prefix .. "respiration",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "heme-a3",
+      icon = icons .. "haema3.png",
+      icon_size = 64,
+      subgroup = prefix .. "respiration",
+      stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "ubichinon",
+      icon = icons .. "ubichinon_modul.png",
       icon_size = 64,
       subgroup = prefix .. "respiration",
       stack_size = 200

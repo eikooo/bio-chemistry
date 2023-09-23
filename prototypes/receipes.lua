@@ -215,6 +215,7 @@ data:extend(
 data:extend(
   {
     {
+      order="a",
       name = prefix .. "hexokinase",
       type = "recipe",
       category = "crafting",
@@ -233,6 +234,7 @@ data:extend(
       }
     },
     {
+      order="b",
       name = prefix .. "glucose-6-phosphate-isomerase",
       type = "recipe",
       category = "crafting",
@@ -249,6 +251,7 @@ data:extend(
       }
     },
     {
+      order="c",
       name = prefix .. "phosphofructokinase",
       type = "recipe",
       category = "crafting",
@@ -267,6 +270,7 @@ data:extend(
       }
     },
     {
+      order="d",
       name = prefix .. "aldolase",
       type = "recipe",
       category = "crafting",
@@ -283,6 +287,7 @@ data:extend(
       }
     },
     {
+      order="e",
       name = prefix .. "triosephosphate-isomerase",
       type = "recipe",
       category = "crafting",
@@ -299,6 +304,7 @@ data:extend(
       }
     },
     {
+      order="f",
       name = prefix .. "glycerinaldehyd-3-phosphate-dehydrogenase",
       type = "recipe",
       category = "crafting",
@@ -317,6 +323,7 @@ data:extend(
       }
     },
     {
+      order="g",
       name = prefix .. "phosphoglycerate-kinase",
       type = "recipe",
       category = "crafting",
@@ -336,6 +343,7 @@ data:extend(
       }
     },
     {
+      order="h",
       name = prefix .. "phosphoglycerate-mutase",
       type = "recipe",
       category = "crafting",
@@ -352,6 +360,7 @@ data:extend(
       }
     },
     {
+      order="i",
       name = prefix .. "enolase",
       type = "recipe",
       category = "advanced-crafting",
@@ -368,6 +377,7 @@ data:extend(
       }
     },
     {
+      order="j",
       name = prefix .. "pyruvat-kinase",
       type = "recipe",
       category = "crafting",
@@ -390,6 +400,7 @@ data:extend(
 data:extend(
   {
     {
+      order="a",
       name = prefix .. "fructokinase",
       type = "recipe",
       category = "crafting",
@@ -409,6 +420,7 @@ data:extend(
       }
     },
     {
+      order="b",
       name = prefix .. "aldolase-b",
       type = "recipe",
       category = "crafting",
@@ -426,6 +438,7 @@ data:extend(
       }
     },
     {
+      order="c",
       name = prefix .. "triokinase",
       type = "recipe",
       category = "crafting",
@@ -462,7 +475,7 @@ data:extend(
       main_product = "",
       results = {
         {type = "item", name = prefix .. "glucose", amount = 1},
-        {type = "item", name = prefix .. "glactose", amount = 1}
+        {type = "item", name = prefix .. "galactose", amount = 1}
       }
     }
   }
@@ -669,6 +682,7 @@ data:extend(
 data:extend(
   {
     {
+      order="a",
       name = prefix .. "pyruvatdehydrogenase-complex-e1-step1",
       type = "recipe",
       category = "crafting",
@@ -687,6 +701,7 @@ data:extend(
       }
     },
     {
+      order="b",
       name = prefix .. "pyruvatdehydrogenase-complex-e1-step2",
       type = "recipe",
       category = "crafting",
@@ -704,6 +719,7 @@ data:extend(
       }
     },
     {
+      order="c",
       name = prefix .. "dihydrolipoyl-transacetylase-e2",
       type = "recipe",
       category = "crafting",
@@ -722,6 +738,7 @@ data:extend(
       }
     },
     {
+      order="d",
       name = prefix .. "dihydrolipoyl-dehydrogenase-e3-step1",
       type = "recipe",
       category = "crafting",
@@ -740,6 +757,7 @@ data:extend(
       }
     },
     {
+      order="e",
       name = prefix .. "dihydrolipoyl-dehydrogenase-e3-step2",
       type = "recipe",
       category = "crafting",
@@ -763,6 +781,7 @@ data:extend(
 data:extend(
   {
     {
+      order="aa",
       name = prefix .. "lipase",
       type = "recipe",
       category = "advanced-crafting",
@@ -782,6 +801,7 @@ data:extend(
       }
     },
     {
+      order="ba",
       name = prefix .. "lipase-butter",
       type = "recipe",
       category = "advanced-crafting",
@@ -801,10 +821,11 @@ data:extend(
       }
     },
     {
+      order="a",
       name = prefix .. "glycerol-kinase",
       type = "recipe",
       category = "crafting",
-      subgroup = prefix .. "lipolysis",
+      subgroup = prefix .. "lipolysis-glycerol",
       energy_required = 5,
       icon = icons .. "glycerin-kinase.png",
       icon_size = 64,
@@ -820,10 +841,11 @@ data:extend(
       }
     },
     {
+      order="b",
       name = prefix .. "glycerol-3-phosphate-dehydrogenase",
       type = "recipe",
       category = "crafting",
-      subgroup = prefix .. "lipolysis",
+      subgroup = prefix .. "lipolysis-glycerol",
       energy_required = 5,
       icon = icons .. "glycerin-phosphat-dehydrogenase.png",
       icon_size = 64,
@@ -839,6 +861,7 @@ data:extend(
       }
     },
     {
+      order="ab",
       name = prefix .. "thiokinase-step1",
       type = "recipe",
       category = "advanced-crafting",
@@ -857,6 +880,7 @@ data:extend(
       }
     },
     {
+      order="ac",
       name = prefix .. "thiokinase-step2",
       type = "recipe",
       category = "advanced-crafting",
@@ -875,6 +899,7 @@ data:extend(
       }
     },
     {
+      order="bb",
       name = prefix .. "thiokinase-step1-c4",
       type = "recipe",
       category = "advanced-crafting",
@@ -893,6 +918,7 @@ data:extend(
       }
     },
     {
+      order="bc",
       name = prefix .. "thiokinase-step2-c4",
       type = "recipe",
       category = "advanced-crafting",
@@ -916,10 +942,11 @@ for i = 18, 4, -2 do
   data:extend(
     {
       {
+        order="a",
         name = prefix .. "acyl-coa-dehydrogenase-c" .. i,
         type = "recipe",
         category = "crafting",
-        subgroup = prefix .. "lipolysis",
+        subgroup = prefix .. "lipolysis-c".. i,
         energy_required = 5,
         icon = icons .. "c" .. i .. "-acyl-coa-dehydrogenase.png",
         icon_size = 64,
@@ -934,10 +961,11 @@ for i = 18, 4, -2 do
         }
       },
       {
+        order="b",
         name = prefix .. "enoyl-coa-hydratase-c" .. i,
         type = "recipe",
         category = "advanced-crafting",
-        subgroup = prefix .. "lipolysis",
+        subgroup = prefix .. "lipolysis-c".. i,
         energy_required = 5,
         icon = icons .. "c" .. i .. "-enoyl-coa-hydratase.png",
         icon_size = 64,
@@ -951,10 +979,11 @@ for i = 18, 4, -2 do
         }
       },
       {
+        order="c",
         name = prefix .. "3-hydroxyacyl-coa-dehydrogenase-c" .. i,
         type = "recipe",
         category = "crafting",
-        subgroup = prefix .. "lipolysis",
+        subgroup = prefix .. "lipolysis-c".. i,
         energy_required = 5,
         icon = icons .. "c" .. i .. "-hydroxyacyl-coa-dehydrogenase.png",
         icon_size = 64,
@@ -976,10 +1005,11 @@ for i = 18, 6, -2 do
   data:extend(
     {
       {
+        order="d",
         name = prefix .. "acetyl-coa-c-acetyltransferase-c" .. (i-2),
         type = "recipe",
         category = "crafting",
-        subgroup = prefix .. "lipolysis",
+        subgroup = prefix .. "lipolysis-c".. i,
         energy_required = 5,
         icon = icons .. "c" .. (i-2) .. "-ketothiolase.png",
         icon_size = 64,
@@ -999,6 +1029,7 @@ end
 data:extend(
   {
     {
+      order= "c",
       name = prefix .. "acetyl-coa-c-acetyltransferase-c2",
       type = "recipe",
       category = "crafting",
@@ -1020,6 +1051,7 @@ data:extend(
 data:extend(
   {
     {
+      order="a",
       name = prefix .. "glutamate-dehydrogenase-step1",
       type = "recipe",
       category = "crafting",
@@ -1039,6 +1071,7 @@ data:extend(
       }
     },
     {
+      order="b",
       name = prefix .. "glutamate-dehydrogenase-step2",
       type = "recipe",
       category = "advanced-crafting",
@@ -1057,6 +1090,7 @@ data:extend(
       }
     },
     {
+      order="e",
       name = prefix .. "glutamine-synthetase",
       type = "recipe",
       category = "advanced-crafting",
@@ -1078,6 +1112,7 @@ data:extend(
       }
     },
     {
+      order="c",
       name = prefix .. "aspartate-transaminase",
       type = "recipe",
       category = "crafting",
@@ -1096,6 +1131,7 @@ data:extend(
       }
     },
     {
+      order="d",
       name = prefix .. "alanine-transaminase",
       type = "recipe",
       category = "crafting",
@@ -1119,6 +1155,7 @@ data:extend(
 data:extend(
   {
     {
+      order="a",
       name = prefix .. "citrate-synthase-step1",
       type = "recipe",
       category = "crafting",
@@ -1136,6 +1173,7 @@ data:extend(
       }
     },
     {
+      order="b",
       name = prefix .. "citrate-synthase-step2",
       type = "recipe",
       category = "advanced-crafting",
@@ -1154,6 +1192,7 @@ data:extend(
       }
     },
     {
+      order="c",
       name = prefix .. "aconitase",
       type = "recipe",
       category = "crafting",
@@ -1170,6 +1209,7 @@ data:extend(
       }
     },
     {
+      order="d",
       name = prefix .. "isocitrate-dehydrogenase-step1",
       type = "recipe",
       category = "crafting",
@@ -1189,6 +1229,7 @@ data:extend(
       }
     },
     {
+      order="e",
       name = prefix .. "isocitrate-dehydrogenase-step2",
       type = "recipe",
       category = "crafting",
@@ -1207,6 +1248,7 @@ data:extend(
       }
     },
     {
+      order="f",
       name = prefix .. "oxoglutarate-dehydrogenase-complex",
       type = "recipe",
       category = "crafting",
@@ -1227,6 +1269,7 @@ data:extend(
       }
     },
     {
+      order="g",
       name = prefix .. "succinyl-coenzyme-a-synthetase",
       type = "recipe",
       category = "crafting",
@@ -1247,6 +1290,7 @@ data:extend(
       }
     },
     {
+      order="h",
       name = prefix .. "succinate-dehydrogenase",
       type = "recipe",
       category = "crafting",
@@ -1265,6 +1309,7 @@ data:extend(
       }
     },
     {
+      order="i",
       name = prefix .. "fumarase",
       type = "recipe",
       category = "advanced-crafting",
@@ -1282,6 +1327,7 @@ data:extend(
       }
     },
     {
+      order="j",
       name = prefix .. "malate-dehydrogenase",
       type = "recipe",
       category = "crafting",
@@ -1305,6 +1351,7 @@ data:extend(
 data:extend(
   {
     {
+      order="a",
       name = prefix .. "pantothenate-kinase",
       type = "recipe",
       category = "crafting",
@@ -1323,6 +1370,7 @@ data:extend(
       }
     },
     {
+      order="b",
       name = prefix .. "phosphopantothenate-cysteine-ligase",
       type = "recipe",
       category = "crafting",
@@ -1343,6 +1391,7 @@ data:extend(
       }
     },
     {
+      order="c",
       name = prefix .. "phosphopantothenoylcysteine-decarboxylase",
       type = "recipe",
       category = "crafting",
@@ -1359,6 +1408,7 @@ data:extend(
       }
     },
     {
+      order="d",
       name = prefix .. "pantetheine-phosphate-adenylyltransferase",
       type = "recipe",
       category = "crafting",
@@ -1377,6 +1427,7 @@ data:extend(
       }
     },
     {
+      order="e",
       name = prefix .. "dephospho-coa-kinase",
       type = "recipe",
       category = "crafting",
@@ -1399,6 +1450,7 @@ data:extend(
 data:extend(
   {
     {
+      order="b",
       name = prefix .. "carbamoyl-phosphate-synthetase-i",
       type = "recipe",
       category = "crafting",
@@ -1419,6 +1471,7 @@ data:extend(
       }
     },
     {
+      order="c",
       name = prefix .. "ornithine-transcarbamylase-otc",
       type = "recipe",
       category = "crafting",
@@ -1437,6 +1490,7 @@ data:extend(
       }
     },
     {
+      order="d",
       name = prefix .. "argininosuccinate-synthase",
       type = "recipe",
       category = "crafting",
@@ -1457,6 +1511,7 @@ data:extend(
       }
     },
     {
+      order="e",
       name = prefix .. "argininosuccinate-lyase",
       type = "recipe",
       category = "crafting",
@@ -1474,6 +1529,7 @@ data:extend(
       }
     },
     {
+      order="a",
       name = prefix .. "arginase",
       type = "recipe",
       category = "advanced-crafting",
@@ -1492,6 +1548,7 @@ data:extend(
       }
     },
     {
+      order="f",
       name = prefix .. "create-simple-urine",
       type = "recipe",
       category = "advanced-crafting",
@@ -1513,95 +1570,115 @@ data:extend(
 data:extend(
   {
     {
+      order="a",
       name = prefix .. "respiration-complex-i",
       type = "recipe",
       category = "crafting",
       subgroup = prefix .. "respiration",
-      energy_required = 5 * specialModuleSpeedFactor,
+      energy_required = 5,
       icon = icons .. "e.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "nadh", amount = 1},
-        {type = "item", name = prefix .. "h+", amount = 5}
+        {type = "item", name = prefix .. "h+", amount = 5},
+        {type = "item", name = prefix .. "fe:s-cluster", amount = 1},
       },
       main_product = "",
       results = {
         {type = "item", name = prefix .. "e-", amount = 2},
         {type = "item", name = prefix .. "nad+", amount = 1},
-        {type = "item", name = prefix .. "h+-imr", amount = 4}
+        {type = "item", name = prefix .. "h+-imr", amount = 4},
+        {type = "item", name = prefix .. "fe:s-cluster", amount = 1},
       }
     },
     {
+      order="b",
       name = prefix .. "respiration-complex-ii",
       type = "recipe",
       category = "crafting",
       subgroup = prefix .. "respiration",
-      energy_required = 5 * specialModuleSpeedFactor * specialModuleSpeedFactor,
+      energy_required = 5,
       icon = icons .. "ubichinol.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "e-", amount = 2},
-        {type = "item", name = prefix .. "fadh2-2e-", amount = 1}
+        {type = "item", name = prefix .. "fadh2-2e-", amount = 1},
+        {type = "item", name = prefix .. "fe:s-cluster", amount = 1},
+        {type = "item", name = prefix .. "ubichinon", amount = 1},
       },
       main_product = "",
       results = {
-        {type = "item", name = prefix .. "ubiquinol", amount = 2}
+        {type = "item", name = prefix .. "ubiquinol", amount = 2},
+        {type = "item", name = prefix .. "fe:s-cluster", amount = 1},
+        {type = "item", name = prefix .. "ubichinon", amount = 1},
       }
     },
     {
+      order="c",
       name = prefix .. "respiration-complex-iii-step1",
       type = "recipe",
       category = "crafting",
       subgroup = prefix .. "respiration",
-      energy_required = 5 * specialModuleSpeedFactor,
+      energy_required = 5,
       icon = icons .. "semichinon.png",
       icon_size = 64,
       ingredients = {
-        {type = "item", name = prefix .. "ubiquinol", amount = 1}
+        {type = "item", name = prefix .. "ubiquinol", amount = 1},
+        {type = "item", name = prefix .. "fe:s-cluster", amount = 1},
       },
       main_product = "",
       results = {
         {type = "item", name = prefix .. "semiquinone", amount = 1},
         {type = "item", name = prefix .. "cyt-c-e-", amount = 1},
-        {type = "item", name = prefix .. "h+-imr", amount = 2}
+        {type = "item", name = prefix .. "h+-imr", amount = 2},
+        {type = "item", name = prefix .. "fe:s-cluster", amount = 1},
       }
     },
     {
+      order="d",
       name = prefix .. "respiration-complex-iii-step2",
       type = "recipe",
       category = "crafting",
       subgroup = prefix .. "respiration",
-      energy_required = 5 * specialModuleSpeedFactor,
+      energy_required = 5,
       icon = icons .. "passierschein.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "semiquinone", amount = 1},
-        {type = "item", name = prefix .. "h+", amount = 2}
+        {type = "item", name = prefix .. "h+", amount = 2},
+        {type = "item", name = prefix .. "ubichinon", amount = 1},
       },
       main_product = "",
       results = {
-        {type = "item", name = prefix .. "permit-ubiquinone", amount = 1}
+        {type = "item", name = prefix .. "permit-ubiquinone", amount = 1},
+        {type = "item", name = prefix .. "ubichinon", amount = 1},
       }
     },
     {
+      order="e",
       name = prefix .. "respiration-complex-iv-step1",
       type = "recipe",
       category = "crafting",
       subgroup = prefix .. "respiration",
-      energy_required = 5 * specialModuleSpeedFactor * specialModuleSpeedFactor,
+      energy_required = 5,
       icon = icons .. "feoocu.png",
       icon_size = 64,
       ingredients = {
         {type = "item", name = prefix .. "permit-ubiquinone", amount = 1},
         {type = "item", name = prefix .. "cyt-c-e-", amount = 2},
-        {type = "item", name = prefix .. "o2", amount = 1}
+        {type = "item", name = prefix .. "o2", amount = 1},
+        {type = "item", name = prefix .. "cub", amount = 1},
+        {type = "item", name = prefix .. "heme-a3", amount = 1},
       },
       main_product = "",
       results = {
-        {type = "item", name = prefix .. "fe-o-o-cu", amount = 2}
+        {type = "item", name = prefix .. "fe-o-o-cu", amount = 2},
+        {type = "item", name = prefix .. "cub", amount = 1},
+        {type = "item", name = prefix .. "heme-a3", amount = 1},
       }
     },
     {
+      order="f",
       name = prefix .. "respiration-complex-iv-step2",
       type = "recipe",
       category = "advanced-crafting",
@@ -1621,6 +1698,7 @@ data:extend(
       }
     },
     {
+      order="g",
       name = prefix .. "atp-sythase",
       type = "recipe",
       category = "crafting",
@@ -1639,6 +1717,7 @@ data:extend(
       }
     },
     {
+      order="ea",
       name = prefix .. "simple-gas-exchange",
       type = "recipe",
       category = "crafting",
@@ -1660,7 +1739,7 @@ data:extend(
 data:extend(
   {
     {
-      name = prefix .. "fe:s-cluster-a-module",
+      name = prefix .. "fe:s-cluster",
       type = "recipe",
       category = "crafting",
       subgroup = prefix .. "modules",
@@ -1669,34 +1748,10 @@ data:extend(
         {type = "item", name = "sulfur", amount = 4},
         {type = "item", name = prefix .. "cysteine", amount = 4}
       },
-      result = prefix .. "fe:s-cluster-a-module"
+      result = prefix .. "fe:s-cluster"
     },
     {
-      name = prefix .. "fe:s-cluster-b-module",
-      type = "recipe",
-      category = "crafting",
-      subgroup = prefix .. "modules",
-      ingredients = {
-        {type = "item", name = "iron-plate", amount = 2},
-        {type = "item", name = "sulfur", amount = 6},
-        {type = "item", name = prefix .. "cysteine", amount = 4}
-      },
-      result = prefix .. "fe:s-cluster-b-module"
-    },
-    {
-      name = prefix .. "fe:s-cluster-c-module",
-      type = "recipe",
-      category = "crafting",
-      subgroup = prefix .. "modules",
-      ingredients = {
-        {type = "item", name = "iron-plate", amount = 4},
-        {type = "item", name = "sulfur", amount = 8},
-        {type = "item", name = prefix .. "cysteine", amount = 4}
-      },
-      result = prefix .. "fe:s-cluster-c-module"
-    },
-    {
-      name = prefix .. "cub-module",
+      name = prefix .. "cub",
       type = "recipe",
       category = "crafting",
       subgroup = prefix .. "modules",
@@ -1704,10 +1759,10 @@ data:extend(
         {type = "item", name = "copper-plate", amount = 2},
         {type = "item", name = "iron-gear-wheel", amount = 2}
       },
-      result = prefix .. "cub-module"
+      result = prefix .. "cub"
     },
     {
-      name = prefix .. "heme-a3-module",
+      name = prefix .. "heme-a3",
       type = "recipe",
       category = "crafting",
       subgroup = prefix .. "modules",
@@ -1715,10 +1770,10 @@ data:extend(
         {type = "item", name = prefix .. "blood", amount = 1},
         {type = "item", name = "iron-plate", amount = 1}
       },
-      result = prefix .. "heme-a3-module"
+      result = prefix .. "heme-a3"
     },
     {
-      name = prefix .. "ubichinon-module",
+      name = prefix .. "ubichinon",
       type = "recipe",
       category = "crafting",
       subgroup = prefix .. "modules",
@@ -1727,7 +1782,7 @@ data:extend(
         {type = "item", name = "iron-plate", amount = 1},
         {type = "item", name = "copper-plate", amount = 1}
       },
-      result = prefix .. "ubichinon-module"
+      result = prefix .. "ubichinon"
     }
   }
 )
