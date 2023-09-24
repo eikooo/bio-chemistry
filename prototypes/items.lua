@@ -189,6 +189,14 @@ data:extend(
       icon_size = 64,
       subgroup = prefix .. "leftovers",
       stack_size = 200
+    },
+    {
+      type = "item",
+      name = prefix .. "mixed-protein",
+      icon = icons .. "bio-chemistry.png",
+      icon_size = 64,
+      subgroup = prefix .. "leftovers",
+      stack_size = 200
     }
   }
 )

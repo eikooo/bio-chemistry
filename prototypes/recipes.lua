@@ -207,6 +207,20 @@ data:extend(
       main_product = prefix .. "coenzyme-q",
       results = {
         {type = "item", name = prefix .. "coenzyme-q", amount = 1}
+      },
+    },
+    {
+      name = prefix .. "mixed-protein",
+      type = "recipe",
+      category = "crafting",
+      energy_required = 5,
+      ingredients = {
+        {type = "item", name = prefix .. "plant-protein", amount = 1},
+        {type = "item", name = prefix .. "meat-protein", amount = 1}
+      },
+      main_product = prefix .. "mixed-protein",
+      results = {
+        {type = "item", name = prefix .. "mixed-protein", amount = 1}
       }
     }
   }

@@ -1,3 +1,4 @@
 require("prototypes.items")
-require("prototypes.receipes")
+require("prototypes.recipes")
+require("prototypes.recipes-changed")
 require("prototypes.resources")
