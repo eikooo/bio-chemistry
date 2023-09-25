@@ -209,21 +209,68 @@ data:extend(
         {type = "item", name = prefix .. "coenzyme-q", amount = 1}
       },
     },
-    {
-      name = prefix .. "mixed-protein",
-      type = "recipe",
-      category = "crafting",
-      energy_required = 5,
-      ingredients = {
-        {type = "item", name = prefix .. "plant-protein", amount = 1},
-        {type = "item", name = prefix .. "meat-protein", amount = 1}
-      },
-      main_product = prefix .. "mixed-protein",
-      results = {
-        {type = "item", name = prefix .. "mixed-protein", amount = 1}
-      }
-    }
   }
+)
+data:extend(
+        {
+          {
+            name = prefix .. "mixed-protein",
+            type = "recipe",
+            category = "crafting",
+            energy_required = 5,
+            ingredients = {
+              {type = "item", name = prefix .. "plant-protein", amount = 1},
+              {type = "item", name = prefix .. "meat-protein", amount = 1}
+            },
+            main_product = prefix .. "mixed-protein",
+            results = {
+              {type = "item", name = prefix .. "mixed-protein", amount = 1}
+            }
+          },
+          {
+            name = prefix .. "denaturated-protein",
+            type = "recipe",
+            category = "smelting",
+            energy_required = 3.2,
+            ingredients = {
+              {type = "item", name = prefix .. "mixed-protein", amount = 1}
+            },
+            result = prefix .. "denaturated-protein"
+          },
+          {
+            name = prefix .. "Replicate DNA",
+            type = "recipe",
+            category = "crafting",
+            subgroup = prefix .. "material",
+            energy_required = 5,
+            icon = icons .. "bio-chemistry.png",
+            icon_size = 64,
+            ingredients = {
+              {type = "item", name = prefix .. "dna", amount = 1},
+              {type = "item", name = prefix .. "mixed-protein", amount = 1}
+            },
+            results = {
+              {type = "item", name = prefix .. "dna", amount = 1},
+              {type = "item", name = prefix .. "dna", amount = 1,probability=0.33},
+              {type = "item", name = prefix .. "dna-useful", amount = 1,probability=0.33},
+              {type = "item", name = prefix .. "dna-broken", amount = 1,probability=0.33}
+            }
+          },
+          {
+            name = prefix .. "relevant-information",
+            type = "recipe",
+            category = "crafting",
+            energy_required = 5,
+            ingredients = {
+              {type = "item", name = prefix .. "dna", amount = 1},
+              {type = "item", name = prefix .. "mixed-protein", amount = 2}
+            },
+            main_product = prefix .. "relevant-information",
+            results = {
+              {type = "item", name = prefix .. "relevant-information", amount = 1}
+            }
+          },
+        }
 )
 --glycolyse
 data:extend(

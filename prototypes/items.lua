@@ -18,6 +18,12 @@ data:extend(
     },
     {
       type = "item-subgroup",
+      name = prefix .. "material",
+      group = prefix .. "bio-chemistry",
+      order = "a-b"
+    },
+    {
+      type = "item-subgroup",
       name = prefix .. "sugar",
       group = prefix .. "bio-chemistry",
       order = "b"
@@ -157,6 +163,55 @@ for i = 4, 18, 2 do
   )
 end
 data:extend(
+        {
+          {
+            type = "item",
+            name = prefix .. "mixed-protein",
+            icon = icons .. "bio-chemistry.png",
+            icon_size = 64,
+            subgroup = prefix .. "material",
+            stack_size = 200
+          },
+          {
+            type = "item",
+            name = prefix .. "denaturated-protein",
+            icon = icons .. "bio-chemistry.png",
+            icon_size = 64,
+            subgroup = prefix .. "material",
+            stack_size = 200
+          },
+          {
+            type = "item",
+            name = prefix .. "dna",
+            icon = icons .. "bio-chemistry.png",
+            icon_size = 64,
+            subgroup = prefix .. "material",
+            stack_size = 200
+          },{
+            type = "item",
+            name = prefix .. "dna-useful",
+            icon = icons .. "bio-chemistry.png",
+            icon_size = 64,
+            subgroup = prefix .. "material",
+            stack_size = 200
+          },{
+            type = "item",
+            name = prefix .. "dna-broken",
+            icon = icons .. "bio-chemistry.png",
+            icon_size = 64,
+            subgroup = prefix .. "material",
+            stack_size = 200
+          },{
+            type = "item",
+            name = prefix .. "relevant-information",
+            icon = icons .. "bio-chemistry.png",
+            icon_size = 64,
+            subgroup = prefix .. "material",
+            stack_size = 200
+          },
+        }
+)
+data:extend(
   {
     {
       type = "item",
@@ -190,14 +245,6 @@ data:extend(
       subgroup = prefix .. "leftovers",
       stack_size = 200
     },
-    {
-      type = "item",
-      name = prefix .. "mixed-protein",
-      icon = icons .. "bio-chemistry.png",
-      icon_size = 64,
-      subgroup = prefix .. "leftovers",
-      stack_size = 200
-    }
   }
 )
 data:extend(
